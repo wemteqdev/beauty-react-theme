@@ -1,0 +1,28 @@
+.ola-price-range * {
+  box-sizing: border-box; }
+.ola-price-range .price-handler {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 2px #ff4365;
+  cursor: pointer;
+  margin-top: -7px;
+  background: #fff; }
+.ola-price-range .price-slider {
+  display: block;
+  margin-bottom: 56px;
+  height: 2px;
+  background-color: rgba(26, 24, 27, 0.4); }
+  .ola-price-range .price-slider .track-0 {
+    height: 2px;
+    background-color: rgba(26, 24, 27, 0.4); }
+  .ola-price-range .price-slider .track-1 {
+    height: 2px;
+    background-color: #ff4365;
+    border: solid 1px #ff4365;
+    margin-top: 0px; }
+  .ola-price-range .price-slider .track-2 {
+    height: 2px;
+    background-color: rgba(26, 24, 27, 0.4); }
+
+/*# sourceMappingURL=price-range-slider.css.map */

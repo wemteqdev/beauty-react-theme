@@ -1,0 +1,124 @@
+$timepicker-w:294px;
+
+.ola-time-picker{
+    * {
+        box-sizing: border-box;
+    }
+
+    position: relative;
+    
+    .time-picker-trigger{
+        display: block;
+        width:$timepicker-w;
+        height:29px;
+        margin-bottom: 3px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: solid 1px rgba(26, 24, 27, 0.4);
+        padding: 3px 4px 5px 11px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: rgba(26, 24, 27, 0.6);
+        
+        &>img {
+            float:right;
+            padding:3px;
+        }
+
+        &:active{
+            background-color: rgba(26, 24, 27, 0.2);
+            border: solid 1px rgba(26, 24, 27, 0.4);
+        }
+    }
+    .time-picker-handler{
+        width: 8px;
+        height: 24px;
+        background-color: #ff4365;
+        cursor: pointer;
+        margin-top:-10px;
+    }
+
+    .timepicker-slider{
+        display: block;
+        margin-bottom:56px;
+        height: 2px;
+        background-color: rgba(26, 24, 27, 0.4);
+        .track-0 {
+            height: 2px;
+            background-color: #ff4365;
+        }
+        .track-1{
+            height: 2px;
+            background-color: rgba(26, 24, 27, 0.4);
+        }
+    }
+    .timepicker-panel{
+        position: absolute;
+        background: #fff;
+        border: solid 2px rgba(26, 24, 27, 0.1);
+        width:100%;
+        padding:0 24px;
+        &.timepicker-hide{
+            visibility: hidden;
+        }
+
+        &.timepicker-show{
+            visibility: show;
+        }
+        .selected-time {
+            font-size: 46px;
+            font-weight: 200;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #1a181b;
+            margin-top:32px;
+            margin-bottom:46px;
+        }
+        .time-gage-number {
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 19px;
+            div {
+                display: block;
+            }
+
+            &>span:first-child {
+                display: block;
+                margin-right:7.9%;
+            }
+            &>.lines-group{
+                width: 58px;
+                height:12px;
+                border: solid rgba(26, 24, 27, 0.2);
+                border-width: 0 1px 0 1px;
+                .line {
+                    background-color: rgba(26, 24, 27, 0.2);
+                    width:1px;
+                    height:12px;
+                    display: block;
+                    margin: auto;
+
+                }
+            } 
+            &>span.medium{
+                display: block;
+                margin-right:7.4%;
+                margin-left:7.4%;
+            }
+
+            &>span:last-child{
+                display: block;
+                margin-left:7.4%;
+            }
+
+        }
+    }
+}
+

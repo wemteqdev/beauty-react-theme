@@ -1,0 +1,54 @@
+.banner-container {
+  position: relative;
+  min-height: 208px;
+  width: 100%;
+  background-position: 75%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow: hidden; }
+  .banner-container .description {
+    margin-top: 44px;
+    margin-bottom: 32px;
+    margin-left: 6.2%;
+    font-size: 15px;
+    font-weight: 600; }
+  .banner-container .banner-btn {
+    margin-left: 6.2%;
+    width: 280px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 40px; }
+  .banner-container .center-form {
+    margin: auto;
+    width: 100%;
+    text-align: center; }
+
+.signup-banner {
+  margin-top: 104px;
+  margin-bottom: 64px; }
+  .signup-banner .sign-up-des {
+    font-size: 34px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.32;
+    letter-spacing: -0.5px;
+    color: #1a181b;
+    margin: 44px 0 35px 0; }
+  .signup-banner .signup-banner-btn {
+    width: 282px !important;
+    height: 44px !important;
+    width: 256px;
+    height: 21px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center; }
+
+/*# sourceMappingURL=banner.css.map */

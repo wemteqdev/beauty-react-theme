@@ -1,0 +1,70 @@
+
+.itdm-list {
+    &>.title-comment {
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #1a181b;
+        margin-bottom: 8px;
+    }
+    &>.comment {
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.7;
+        letter-spacing: 0.3px;
+        color: #1a181b;
+        margin-bottom:44px;
+    }
+    &>.title {
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #1a181b;
+        margin-bottom: 32px;
+    }
+
+    .itdm{
+        .item-img{
+            width: 100%;
+            position: relative;
+            padding-top: 47.5%;
+            background-position: center;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            overflow: hidden;
+        }
+        
+        .ad-title{
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1a181b;
+            margin-bottom:8px;
+            margin-top:16px;
+            text-transform: capitalize;
+        }
+        .ad-description{
+            width:100%;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: #1a181b;
+        }   
+    }
+
+}
+

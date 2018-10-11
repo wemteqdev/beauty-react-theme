@@ -1,0 +1,101 @@
+.code-conduct{
+    .code-conduct-block {
+        margin-top:125px;
+        &>.title {
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #1a181b;
+            margin-bottom:8px;
+        }
+        .comment {
+            margin-bottom: 45px;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+            color: #1a181b;
+        }
+        .code-blog-list{
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+            margin:0 -20px 0 -20px;
+        }
+        .code-blog {
+            display: table;
+            -webkit-box-flex:0;
+            margin:0 20px 0 20px;
+            .image{
+                display: block;
+                width: inherit;
+                overflow: hidden;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                margin-bottom:16px;
+            }
+            .image.no-title{
+                margin-bottom:16.9px !important;
+            }
+            &>.title {
+                margin-bottom: 8.9px;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .description{
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            margin-bottom:64.1px;
+        }
+    }
+
+    .more-info-block {
+        .comment {
+            margin-top:38px;
+            width: 490px;
+            height: 90px;
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #1a181b;
+            margin-bottom: 24px;
+        }
+        .more-info-body {
+            display: table;
+            width: 100%;
+            .description {
+                display: table-cell;
+                vertical-align: top;
+                width: 600px;
+            }
+            .image{
+                display: table-cell;
+                vertical-align: top;
+                text-align: right;
+            }
+        }
+
+        margin-bottom:54px;
+    }
+    
+}

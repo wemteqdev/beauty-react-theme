@@ -1,0 +1,32 @@
+.ola-page-alert .text {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #1a181b;
+  display: inline-flex;
+  align-items: center; }
+.ola-page-alert .close-icon {
+  cursor: pointer;
+  float: right; }
+.ola-page-alert .viewlink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 8px; }
+  .ola-page-alert .viewlink .ola-icon {
+    margin-left: 6px; }
+.ola-page-alert.info {
+  padding: 21px 24px 22px 24px;
+  background-color: #2ec4b6; }
+
+/*# sourceMappingURL=ola-alert.css.map */

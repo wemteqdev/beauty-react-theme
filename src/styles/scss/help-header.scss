@@ -1,0 +1,75 @@
+.help-header{
+    margin-left:-120px;
+    margin-right:-120px;
+    padding-left:120px;
+    padding-right:120px;
+    box-sizing: border-box;
+    background-image: linear-gradient(127deg, #2ec4b6, #288690);
+    height:338px;
+    width:1280px;
+    .ola-navbar {
+        background: transparent !important;
+        position: relative !important;
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-item.active{
+            .nav-link {
+                color: #ffffff !important;
+            }
+        }
+
+
+        .message-group{
+            margin-left:24px;
+            margin-top:3px;
+        }
+
+        .shoping-card{
+            margin-left:26px;
+            margin-top:3px;
+        }
+
+        .user-option{
+            display: inline-flex;
+            margin-left:24px;
+            .user-img{
+                width:32px;
+                height:32px;
+                border-radius: 50%;
+                border:solid 2px #fff;
+            }
+            .dropdown-icon {
+                margin-left:8px;
+            }
+
+        }
+    }
+
+    .title {
+        margin-top:64px;
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+        
+    }
+    .search-block{
+        margin-top:41px;
+        .search-bar {
+            width:544px !important;
+            height:60px !important;
+            input {
+                width:260px;
+            }
+        }
+    }
+
+
+    .menu-bar{
+        display: inline-flex;
+    }
+}

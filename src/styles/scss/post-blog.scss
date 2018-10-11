@@ -1,0 +1,50 @@
+.post-blog{
+    .post-img{
+        background-position: center;
+        overflow: hidden;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        min-height: 152px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .post-title {
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #1a181b;
+        margin-bottom: 8px;
+    }
+    .post-description {
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #1a181b;
+        .ola-link {
+            margin-top: 2.9px;
+
+        }
+    }
+
+    &.ola-col-12 {
+        .post-img {
+            height:152px;
+            
+        }
+    }
+
+    &.ola-col-6 {
+        .post-img {
+            height:192px;
+            
+        }
+    }
+
+    margin-bottom: 44px;
+}

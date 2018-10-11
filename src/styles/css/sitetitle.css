@@ -1,0 +1,25 @@
+.site-title {
+  margin-top: 204px;
+  margin-left: 103px; }
+  .site-title .site-title-comment {
+    margin-top: 21px;
+    font-size: 34px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.32;
+    letter-spacing: 0.5px;
+    color: #1a181b; }
+
+.list-title {
+  margin-top: 64px;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: 0.5px;
+  color: #1a181b;
+  margin-bottom: 32px; }
+
+/*# sourceMappingURL=sitetitle.css.map */

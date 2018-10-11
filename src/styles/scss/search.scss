@@ -1,0 +1,341 @@
+
+@import "search-filter-options";
+
+$margin-left:101px;
+.listyourbusiness-page {
+    .searchbox-container {
+        margin-top:64px;
+        margin-bottom:110px;
+    }
+}
+
+.searchresult-page{
+    .searchbox-container {
+        margin-top:64px;
+        margin-bottom:24px;
+    }
+    .searchresult-page-header{
+        background:#fff;
+        width: 1040px;
+        
+    }
+    .filtered-result{
+        margin-top:27px;
+        .filter-result-header{
+            .filter-info{
+                display: inline-flex;
+                align-items: center;
+                font-size: 13px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a181b;
+                margin-top:5px;
+                img{
+                    margin-right:12px;
+                }
+            }
+            .showmap-switch{
+                float: right;
+                height:60px;
+                &>span {
+                    display: block;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.4;
+                    letter-spacing: normal;
+                    color: #1a181b;
+                    margin-bottom: 10.8px;
+                }
+            }
+            
+        }
+        .filered-result-body{
+            width:100%;
+            margin-top:13px;
+            display: inline-flex;
+            .result-list {
+                &.with-map {
+                    width:600px;
+                }
+                &.without-map {
+                    width:100%;
+                }
+                border-bottom: solid 1px rgba(26, 24, 27, 0.05);
+                .cardlist-container {
+                    margin-top:-22px;
+                    padding-bottom:24px;
+                }
+                .card-container {
+                    margin-top: 22px;
+                    margin-bottom: 22px;
+                }
+            }
+            .result-map {
+                width:396px;
+                height:692px;
+                margin-left:44px;
+                background: #ddd;
+                box-sizing: border-box;
+                position: relative;
+                .search-as-move{
+                    position: absolute;
+                    top:0px;
+                    left:0px;
+                    z-index:5;
+                    background:#fff;
+                    padding:8px 16px 11px;
+                }
+                
+            }
+        }
+        
+    }
+}
+
+.searchbox-container{
+    position: relative;
+    margin-left:$margin-left;
+    display: table;
+    .search-bar {
+        width: 718px;
+        display: inline-flex;
+        align-items: center;
+        height: 60px;
+        box-shadow: 0 2px 2px 0 rgba(126, 128, 128, 0.12), 0 0 1px 0 rgba(126, 128, 128, 0.14);
+        background-color: $AltHigh;
+        border: solid 1px $ListLow;
+        .search-img{
+            text-align: center;
+            width:52px;
+            img{
+                vertical-align:middle;
+            }
+        }
+        .search-bar-input-container {
+            input {
+                height:100%;
+                width:260px;
+                padding-right: 72px;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+
+        }
+
+        .search-bar-country-container {
+            width:133px + 24px + 24px;
+            .country-name {
+                margin-left: 24px;
+                width: 133px;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+        }
+        .Line {
+            vertical-align: middle;
+            height: 36px;
+            border: solid 1px rgba(26, 24, 27, 0.1);
+        }
+
+        .search-btn-container{
+            display: table-cell;
+            vertical-align: middle;
+            width:140px;
+            
+        }
+        .search-btn {
+            font-size: 14px;
+            color:$AltHigh;
+            padding:11px;
+            float:right;
+            height:44px;
+            width: 100%;
+            margin-right:8px;
+        }
+    }
+
+    .search-result-container{
+        margin-top:24px;
+    }
+
+    .recent-search-container{
+        margin-top:44px;
+        &>div{
+            padding-left:40px;
+        }
+        .recent-search {
+            padding: 0px;
+        }
+    }
+
+    .search-dropdown-panel-home{
+        position: absolute;
+        background: #fff;
+        z-index: 10;
+        width: 718px;
+        box-shadow: 0 2px 2px 0 rgba(126, 128, 128, 0.12), 0 0 1px 0 rgba(126, 128, 128, 0.14);
+        background-color: #ffffff;
+        border: solid 1px rgba(26, 24, 27, 0.1);
+
+        .hint-text {
+            margin-bottom:19px;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.17;
+            letter-spacing: normal;
+            color: #1a181b;
+        }
+        .recent-search-text {
+            margin-top:50px;
+            margin-bottom:24px;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.17;
+            letter-spacing: normal;
+            color: #1a181b;
+        }
+        .recent-search-result-list {
+            position: relative;
+            height: 60px;
+            img {
+                position: absolute;
+                width:21px;
+                top:12px;
+                left:66px;
+            }
+            .title {
+                position: absolute;
+                text-transform: capitalize;
+                top:6.6px;
+                left:109px;
+                font-size: 15px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .created-date {
+                left:109px;
+                bottom:5.4px;
+                position: absolute;
+                text-transform: capitalize;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            &.highlight{
+                background:#ddd;
+            }
+
+        }
+
+
+        .search-result-list {
+            display: inline-flex;
+            align-items: center;
+            height:40px;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: #1a181b;
+            width:100%;
+            .search-result-icon {
+                padding-left:40px;
+                width:18px;
+                margin-right:12px;
+            }
+            &.highlight{
+                background:#ddd;
+            }
+        }
+
+
+    }
+
+}
+
+.search-result-hidden{
+    visibility: hidden;
+}
+.search-result-show{
+    visibility: visible;
+}
+
+.search-result-list, .recent-search-result-list {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .search-bar {
+        // width:88.8% !important;
+    }
+
+    .search-bar-country-container{
+        display: none !important;
+    }
+    
+}
+
+.gmnoprint{
+    display: none;
+
+}
+.zoom-btn-trigger {
+    position: absolute;
+    right:0px; 
+    z-index: 5;
+    width:32px;
+    height:32px;
+    display: table;
+
+    &[name='Zoom in']{
+        top:0px;
+    }
+    &[name='Zoom out']{
+        top:42px;
+    }
+    img{
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+    }
+    background: #fff;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+.gm-style{
+    
+}

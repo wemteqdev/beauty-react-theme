@@ -1,0 +1,197 @@
+.forpros{
+    .image-header {
+        height:564px;
+        padding:24px 0 24px 120px;
+        .find-out-earning-form{
+            right:266px;
+        }
+        margin-bottom: 0px;
+    }
+
+    .body{
+        margin-bottom:64px;
+
+        .how-come-olafic-pro{
+            margin-bottom: -86px;
+            .pro-gruid-step{
+                display: inline-flex;
+                margin-left:81px;
+                margin-bottom:86px;
+                &>.num{
+                    font-size: 124px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 2.3px;
+                    color: #ff4365;
+                    margin-right:24px;
+                }
+                .text-blog{
+                    width: 400px;
+                    margin-right:66px;
+                    margin-top:40px;
+                    &>.title{
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                        margin-bottom:8.9px;
+                    }
+                    &>.description {
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.67;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                    }
+                }
+                .img>img{
+                    margin-top:23px;
+                    margin-right:44px;
+                    width:320px;
+                    height:152px;
+                }
+            }
+        }
+
+        .page-comment-block{
+            .text-blog{
+                margin-top:44px;
+                margin-bottom: 44.1px;
+                &>.title{
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #1a181b;
+                    margin-bottom:8.9px;
+                }
+                
+                &>.description {
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.67;
+                    letter-spacing: normal;
+                    color: #1a181b;
+                }
+            }            
+        }
+       
+        .blog {
+            display: table;
+            -webkit-box-flex:0;
+            margin:0 20px 0 20px;
+            .image{
+                display: block;
+                width: inherit;
+                overflow: hidden;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                margin-bottom:16px;
+            }
+            .image.no-title{
+                margin-bottom:16px !important;
+            }
+            &>.title {
+                margin-bottom: 8px;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .description{
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #1a181b;
+                max-width: 940px;
+            }
+            margin-bottom:64px;
+        }
+
+        .benefit-for-pros-block{
+            margin-top:120px;
+            &>.title{
+                font-size: 34px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.32;
+                letter-spacing: 0.5px;
+                color: #1a181b;
+                margin-bottom:24px;
+            }
+            &>.comment {
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #1a181b;
+                width:742px;
+                margin-bottom: 44px;
+            }
+            &>.header-img {
+                width: 1040px;
+                height: 304px;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                margin-bottom:88px;
+            }
+            margin-bottom:-64px;
+        }
+
+
+    }
+
+    .make-better-money{
+        float:left;
+        &>.title{
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+            margin-top:35px;
+        }
+        &>.comment {
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+            color: #1a181b;
+            margin-top:8px;
+            margin-bottom: 12px;
+        }
+        &>.description{
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: #ffffff;
+            width:520px;
+        }
+    }
+
+}

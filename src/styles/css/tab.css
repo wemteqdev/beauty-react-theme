@@ -1,0 +1,17 @@
+.tabitem-container {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 240px; }
+  .tabitem-container img {
+    height: 72px;
+    object-fit: contain;
+    float: left;
+    margin-right: 8.3%; }
+  .tabitem-container .title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 72px; }
+
+/*# sourceMappingURL=tab.css.map */

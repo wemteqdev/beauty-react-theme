@@ -1,0 +1,113 @@
+.claim{
+    .auth-busines-block{
+        margin-top:125px;
+        &>.title{
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #1a181b;
+            margin-bottom:8px;
+        }
+    
+        &>.comment{
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+            color: #1a181b;
+            margin-bottom: 44px;
+        }
+        .blog-list {
+            margin:0 -40px 0 -40px;
+        }
+        .blog {
+            margin:0 40px 0 40px;
+            margin-bottom: 88px;
+            .sign-btn {
+                margin-top:44px;
+                width: 160px;
+            }
+        }
+
+        margin-bottom: -88px;
+
+    }
+
+    .some-of-benifit-block {
+        margin-top: 104px;
+        &>.title {
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #1a181b;
+            margin-bottom: 44px;
+        }
+
+        .blog-list {
+            margin:0 -20px 0 -20px;
+        }
+        .blog {
+            margin:0 20px 0 20px;
+            .sign-btn {
+                width: 160px;
+            }
+        }
+    }
+    .signup-banner-block {
+        margin-top:64px;
+    }
+
+
+    .blog-list{
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    }
+    .blog {
+        display: table;
+        -webkit-box-flex:0;
+        
+        .image{
+            display: block;
+            width: inherit;
+            overflow: hidden;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin-bottom:16px;
+        }
+        .image.no-title{
+            margin-bottom:16px !important;
+        }
+        &>.title {
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1a181b;
+        }
+        .description{
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: #1a181b;
+            max-width: 940px;
+            
+        }
+    }
+
+}

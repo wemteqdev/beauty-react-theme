@@ -1,0 +1,107 @@
+.searchbox-container {
+    position: relative;
+    margin-left: 101px;
+    display: table;
+}
+
+
+.listyourbusiness-page .searchbox-container {
+    margin-top: 64px;
+    margin-bottom: 110px;
+}
+
+.searchbox-container .search-bar {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 2px 2px 0 rgba(126, 128, 128, 0.12), 0 0 1px 0 rgba(126, 128, 128, 0.14);
+    background-color: white;
+    border: solid 1px $ListLow;
+
+    .search-img {
+        text-align: center;
+        width: 52px;
+    }
+
+    .search-bar-input-container input {
+        height: 100%;
+        width: 260px;
+        padding-right: 72px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: #1a181b;
+    }
+    .Line {
+        vertical-align: middle;
+        height: 36px;
+        border: solid 1px rgba(26, 24, 27, 0.1);
+    }
+    .search-bar-country-container .country-name {
+        margin-left: 24px;
+        width: 133px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: #1a181b;
+    }
+    .search-btn-container {
+        display: table-cell;
+        vertical-align: middle;
+        width: 140px;
+    }
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    background-color: white;
+    border: solid 1px $ListLow;
+
+    .search-img {
+        margin-left: 10px;
+        margin-right: 13px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.none-border-input {
+    border-color: transparent;
+    outline: none;
+    color: #1a181b;
+}
+
+.searchbox-container .search-bar .search-btn {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 11px;
+    float: right;
+    height: 44px;
+    width: 100%;
+    margin-right: 8px;
+}
+
+.ola-btn-primary {
+    background-color: #ff4365;
+    color: #fff;
+}
+
+.btn {
+    border-radius: 0px !important;
+    padding: 0 25px !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.4 !important;
+    letter-spacing: normal !important;
+    border-color: transparent;
+}

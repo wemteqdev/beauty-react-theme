@@ -1,0 +1,45 @@
+// [class^=ola-alert-] {
+//     .page-alert{
+//         width:100%;
+//     }
+// }
+
+.ola-page-alert{
+    .text{
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: #1a181b;
+        display: inline-flex;
+        align-items: center;
+    }
+    .close-icon{
+        cursor: pointer;
+        float:right;
+    }
+
+    .viewlink {
+        display:inline-flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-decoration: none;
+        .ola-icon {
+            margin-left:6px;
+        }
+        margin-left:8px;
+    }
+
+    &.info {
+        padding:21px 24px 22px 24px;
+        background-color: #2ec4b6;
+    }
+}

@@ -1,0 +1,48 @@
+.footer-categories {
+    .title{
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #1a181b;
+        margin-bottom:23px;
+    }
+    .category-list-block{
+        .category-block{
+            margin-top:44px;
+            &>.header {
+                margin-bottom:32px;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .sub-category-block{
+                margin-top:44px;
+                display:block;
+                &>.header{
+                    margin-bottom:12px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.6;
+                    letter-spacing: normal;
+                    color: #1a181b;
+                }
+                li{
+                    margin-bottom: 12px;
+                    font-size: 15px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

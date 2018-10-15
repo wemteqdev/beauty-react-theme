@@ -1,0 +1,67 @@
+
+.ola-icon {
+    margin-left:4px;
+}
+
+.arrow-right{
+    display: inline-flex;
+    align-items: center;
+    img{
+        transform: rotate(270deg);
+        margin-top:1px;
+    }
+}
+
+.arrow-left{
+    display: inline-flex;
+    align-items: center;
+    img{
+        transform: rotate(90deg);
+        margin-top:1px;
+    }
+}
+.arrow-first {
+    display: inline-flex;
+    align-items: center;
+    img{
+        transform: rotate(90deg);
+        margin-top:1px;
+    }
+}
+.arrow-last {
+    display: inline-flex;
+    align-items: center;
+    img{
+        transform: rotate(270deg);
+        margin-top:1px;
+    }
+}
+
+i.arrow {
+    border: solid #1a181b;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5.9px;
+
+    &.right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    &.left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    
+    &.up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        margin-top:11px;
+    }
+    
+    &.down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-bottom:6px;
+    }
+}

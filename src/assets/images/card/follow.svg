@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="23px" viewBox="0 0 26 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>A9D307CB-B5C7-40BE-8F76-77ECEC2C7FEC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Black-Icons/Follow" transform="translate(1.000000, -2.000000)" fill="#1A181B" fill-rule="nonzero">
+            <g id="Follow" transform="translate(-1.000000, 2.000000)">
+                <path d="M13,22.1562 L12.5,21.863231 C11.988281,21.570263 0,14.531201 0,6.999931 C0,3.140551 3.14062,-6.9e-05 7,-6.9e-05 C9.54297,-6.9e-05 11.77344,1.363211 13,3.398371 C14.22656,1.363211 16.45703,-6.9e-05 19,-6.9e-05 C22.85938,-6.9e-05 26,3.140551 26,6.999931 C26,14.531181 14.0117,21.570231 13.5,21.863231 L13,22.1562 Z M7,2 C4.24219,2 2,4.24219 2,7 C2,12.60547 10.78516,18.4453 13,19.8281 C15.21484,18.44529 24,12.60544 24,7 C24,4.24219 21.75781,2 19,2 C16.24219,2 14,4.24219 14,7 L12,7 C12,4.24219 9.75781,2 7,2 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

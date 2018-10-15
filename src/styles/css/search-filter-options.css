@@ -1,0 +1,83 @@
+.search-fitler-options {
+  margin: 46px 0px 4px 0px; }
+
+.filter-option-item {
+  position: relative; }
+  .filter-option-item .filter-dropdown-panel {
+    position: absolute;
+    top: 43px;
+    visibility: hidden;
+    background-color: #ffffff;
+    border: solid 1px rgba(26, 24, 27, 0.1);
+    position: absolute;
+    z-index: 10; }
+    .filter-option-item .filter-dropdown-panel.types-panel {
+      padding: 44px 40px;
+      width: 596px; }
+      .filter-option-item .filter-dropdown-panel.types-panel .service-title, .filter-option-item .filter-dropdown-panel.types-panel .category-title {
+        font-size: 13px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #1a181b;
+        margin-bottom: 24px; }
+      .filter-option-item .filter-dropdown-panel.types-panel .checkbox {
+        margin-bottom: 24px; }
+      .filter-option-item .filter-dropdown-panel.types-panel .category-group {
+        margin-top: 28px;
+        margin-bottom: 32px; }
+      .filter-option-item .filter-dropdown-panel.types-panel .fileroption-service {
+        margin-bottom: 52px; }
+    .filter-option-item .filter-dropdown-panel.date-panel {
+      width: 294px;
+      padding: 23px 40px 24px 40px; }
+      .filter-option-item .filter-dropdown-panel.date-panel .from, .filter-option-item .filter-dropdown-panel.date-panel .to, .filter-option-item .filter-dropdown-panel.date-panel .Time {
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: #1a181b;
+        margin-bottom: 9px; }
+      .filter-option-item .filter-dropdown-panel.date-panel .to, .filter-option-item .filter-dropdown-panel.date-panel .Time {
+        margin-top: 25px; }
+      .filter-option-item .filter-dropdown-panel.date-panel .clear-filter-btn {
+        margin-top: 33px; }
+    .filter-option-item .filter-dropdown-panel.price-panel {
+      width: 294px;
+      padding: 23px 40px 24px 40px; }
+      .filter-option-item .filter-dropdown-panel.price-panel .price-range {
+        margin-bottom: 2px;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #000000; }
+      .filter-option-item .filter-dropdown-panel.price-panel .price-average-text {
+        margin-bottom: 24px;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #1a181b; }
+      .filter-option-item .filter-dropdown-panel.price-panel .price-frequency {
+        display: inline-flex;
+        align-items: baseline;
+        margin-bottom: 12px;
+        clear: both; }
+        .filter-option-item .filter-dropdown-panel.price-panel .price-frequency .bar {
+          width: 4px;
+          opacity: 0.5;
+          background-color: rgba(26, 24, 27, 0.4);
+          margin-right: 4px; }
+  .filter-option-item.active .filter-dropdown-panel {
+    visibility: visible; }
+
+/*# sourceMappingURL=search-filter-options.css.map */

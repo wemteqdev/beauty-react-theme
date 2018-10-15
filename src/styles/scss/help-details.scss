@@ -1,0 +1,61 @@
+.help-details {
+    .nav-header{
+        margin-top:32px;
+        
+        a {
+            font-size: 15px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: #1a181b;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            img {
+                margin-right: 6px;
+            }
+
+        }
+    }
+    .detail-block{
+        margin-top:32px;
+        .title{
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #1a181b;
+            margin-bottom: 32px;
+        }
+        .description{
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: #1a181b;
+            // width: 840px;
+        }
+        margin-bottom: 104px;
+    }
+
+    .submit-issue-form-bock{
+        .title{
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: #1a181b;
+            margin-bottom: 32px;
+        }
+        margin-bottom: 64px;
+    }
+    
+}

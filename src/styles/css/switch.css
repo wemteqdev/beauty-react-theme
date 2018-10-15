@@ -1,0 +1,22 @@
+.ola-switch {
+  position: relative;
+  display: table; }
+  .ola-switch .switch-bg {
+    z-index: 5; }
+  .ola-switch .switch-pos {
+    position: absolute;
+    z-index: 6; }
+    .ola-switch .switch-pos.on {
+      top: 5px;
+      right: 5px;
+      -webkit-transition: right 2s linear;
+      /* Safari */
+      transition: right 100ms linear; }
+    .ola-switch .switch-pos.off {
+      top: 5px;
+      right: 29px;
+      -webkit-transition: left 2s linear;
+      /* Safari */
+      transition: right 100ms linear; }
+
+/*# sourceMappingURL=switch.css.map */

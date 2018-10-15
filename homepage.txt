@@ -1,0 +1,33 @@
+Here are the homepage information we will have from top to bottom.
+
+1. Logo (name "OlaFic", links: to main site https://www.olafic.com)
+2. How It Works (drop down and links to 3 pages in crm)
+	a, For Businesses (links to for-businesses page and url will be https://www.olafic.com/for-businesses)
+        b, For Professionals (links to for-pros page and url will be https://www.olafic.com/for-pros)
+	c, For Mombers (links to for-members page and url will be https://www.olafic.com/for-members)
+
+3. The header links works like airbnb.com where everyone is a user and then they can submit their business or become
+a Pro.  First they have to signup as a user, once they do, then they can submit their business or become a professional
+The header links are as follows:
+	a, List your business 
+	b, Become a pro
+	c, Help
+	d, Sign Up
+	e, Sign In
+
+4. Search (will send you all search info in seperate page)
+
+
+5. Explore OlaFic:
+	a, Businesses (clicking on this, it will show search result page with all the businesses)
+	b, Professionals (clicking on this, it will show search result page with all the professionals)
+	c, Marketplace (clicking on this, it will show search result page with all the marketplace)
+	d, Deals (clicking on this, it will show search result page with all the deals)
+
+6. Introducing In-Home Services
+That is the banner that will be used and the button links to 
+
+7. Salon (it shows 3 by default and if the screen resolution is more, it show 6 or 7 depending on screen size of person)
+Here we only show business in the category of salons that have banners and they are under businesses, the images are linked
+to business page. Below the banner is Business which tells user it is a business based on account and they are under Spa category
+and under sub-category of Sauna.

@@ -1,0 +1,17 @@
+.submit-issue-form{
+    width:296px;
+    box-sizing: border-box;
+    .form-control{
+        margin-bottom: 40px;
+        border: none;
+
+        input {
+            border: none !important;
+            padding: 0 !important;
+        }
+    }
+    .submit-btn{
+        margin-top: 44px;
+    }
+
+}

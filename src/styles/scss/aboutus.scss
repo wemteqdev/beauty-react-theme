@@ -1,0 +1,63 @@
+.aboutus {
+    &>.title{
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #1a181b;
+        margin-bottom:32px;
+    }
+
+    &>.body{
+        display: inline-flex;
+        .description{
+            width:416px;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: #1a181b;
+            margin-right:64px;
+        }
+    }
+
+    .right-side{
+
+        .img-section > img {
+            width: 560px;
+            height: 370px;
+        }
+
+        .country-city-list{
+            text-align: center;
+            margin-bottom:36px;
+
+            .numbers{
+                font-size: 24px;
+                font-weight: 800;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #ff4365;
+            }
+            .title{
+                font-size: 15px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: normal;
+                color: #1a181b;
+                text-transform: capitalize;
+                margin-bottom:8px;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.footer-careers{
+    margin-top: 61px;
+    display: inline-flex;
+    position: relative;
+    padding-top:64px;
+    width:100%;
+    .left-side-bar{
+        width:560px;
+    }
+    .title{
+        margin-bottom:8px;
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #1a181b;
+    }
+    .comment{
+        margin-bottom:64px; 
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.7;
+        letter-spacing: 0.3px;
+        color: #1a181b;
+    }
+    .description {
+        .header {
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1a181b;
+            
+        }
+        
+        .body {
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: #1a181b;
+        }
+
+        &.block_1{
+            .header {
+                margin-bottom:11.6px;
+            }
+            margin-bottom:45.4px;
+        }
+        &.block_2 {
+            margin-bottom:44px;
+            .header{
+                margin-bottom: 12.7px;
+            }
+            .body-text{
+                margin-bottom:38.3px;
+            }
+
+            .hiring-cateogry{
+                margin-left:19px;
+                .item {
+                    margin-bottom:13px;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #1a181b;
+                    &>div:first-child{
+                        margin-bottom:4px;
+                        display: inline-flex;
+                        align-items: center;
+                        &:before{
+                            content:"";
+                            margin-right:29px;
+                            width:4px;
+                            height:4px;
+                            background: #1a181b;
+                            border-radius: 50%;
+                            display: block;
+                        }
+                    }
+
+                    a {
+                        margin-left:29px;
+                        color: #ff4365
+                    }
+                }
+            }
+        }
+        &.block_3{
+            .header{
+                margin-bottom:12px;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .body{
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+
+        }
+    }
+    .application-form{
+        float: right;
+        width:340px;
+        box-sizing: border-box;
+        box-shadow: inset 1px 0 0 0 rgba(26, 24, 27, 0.05);
+        padding-top:32px;
+        padding-left:24px;
+        &>div:first-child{
+            margin-bottom: 23px;
+        }
+        .text {
+            margin-left:8px;
+            margin-bottom:24px;
+        }
+        button {
+            margin-left:6px;
+        }
+
+
+    }
+
+}

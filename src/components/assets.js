@@ -12,7 +12,7 @@ import blankstar        from '../assets/images/card/actions-ratings-states-empty
 import pin              from '../assets/images/card/icons-8-map-pin.svg';
 import testperson       from '../assets/images/card/test-person.png';
 import follow           from '../assets/images/card/follow.svg';
-import wishlistadd           from '../assets/images/card/wishlist-add.svg';
+import wishlistadd      from '../assets/images/card/wishlist-add.svg';
 import clock_s           from '../assets/images/clock-s.svg';
 import chat_s           from '../assets/images/icons/chat-s.svg';
 import likes_s           from '../assets/images/icons/likes-s.svg';
@@ -99,6 +99,11 @@ import filterIcon from '../assets/images/icons/filter.svg';
 
 
 import info_s           from '../assets/images/icons/info-s.svg';
+import emoji           from '../assets/images/icons/emoji.svg';
+import camera           from '../assets/images/icons/camera.svg';
+import more           from '../assets/images/icons/more.svg';
+import left_arrow_medium_white from '../assets/images/arrow/icons-black-icons-dropdown-arrow-medium-link.svg';
+import arrowright        from '../assets/images/arrow/arrow-right-medium-black.svg';
 
 
 export default {
@@ -176,5 +181,11 @@ export default {
 
 
 
-    info_s
+    info_s,
+    emoji,
+    camera,
+    more, 
+    left_arrow_medium_white, 
+    arrowright, 
+
 }

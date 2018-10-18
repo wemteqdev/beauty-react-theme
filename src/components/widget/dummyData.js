@@ -522,3 +522,122 @@ export const news = [
         date:"15 may 2018",
     }
 ]
+
+export const reviews = [
+    {
+        asset:assets.storyP_1,
+        title: "Double line list item",
+        rating: 1,
+        customers: 3856,
+        categories: ['Top Reviewer', 'Helpful Reviewer'],
+        content:"John is a part time worker involved in many charitable. part time worker involved. John is a part time worker involved in many charitable. part time worker involved.",
+        pics:[assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3],
+        comment:5,
+        likes:5,
+        date:"15 may 2018",
+    },
+    {
+        asset:assets.storyP_2,
+        title: "Double line list item",
+        rating: 1,
+        customers: 3856,
+        categories: ['Top Reviewer', 'Helpful Reviewer'],
+        content:"John is a part time worker involved in many charitable. part time worker involved. John is a part time worker involved in many charitable. part time worker involved.",
+        pics:[assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3],
+        comment:5,
+        likes:5,
+        date:"15 may 2018",
+    }
+]
+
+export const features = [
+    {
+        asset:assets.storyP_4,
+        kind:'spa',
+        subkind:'sauna',
+        title:"We just launched the new Olafic Marketplace to sell your goods",
+        description:"John is a part time worker involved in many charitable actions across the entire world. This should make an impact…",
+        pics:[assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3],
+        comment:5,
+        likes:5,
+        date:"15 may 2018",
+    },
+    {
+        asset:assets.storyP_4,
+        kind:'spa',
+        subkind:'sauna',
+        title:"Elite Spa In Your Own Home And Beyond With Olafic",
+        description:"John is a part time worker involved in many charitable actions across the entire world. This should make an impact…",
+        pics:[assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3,assets.storyP_4,assets.storyP_1, assets.storyP_2, assets.storyP_3],
+        comment:5,
+        likes:5,
+        date:"15 may 2018",
+    },
+]
+
+export const media_assets = [
+    {
+        asset:assets.storyP_1,
+        link:'Logos',
+        logo: 'Chinese white horizontal lockup for responsive web',
+    },
+    {
+        asset:assets.storyP_2,
+        link:'Photos',
+        logo: 'Chinese white horizontal lockup for responsive web',
+    },
+    {
+        asset:assets.storyP_3,
+        link:'Media',
+        logo: 'Chinese white horizontal lockup for responsive web',
+    },
+    {
+        asset:assets.storyP_4,
+        link:'Media',
+        logo: 'Chinese white horizontal lockup for responsive web',
+    },
+]
+
+export const contacts = [
+    {
+        country: 'Asia',
+        contents: [
+            {
+                detail: 'General Asia media inquiries',
+                link: 'press-asia@olafic.com',
+            },
+            {
+                detail: 'General Asia media inquiries',
+                link: 'press-asia@olafic.com',
+            },
+        ]
+    },
+]
+
+export const team_members = [
+    {
+        photo: assets.storyP_1,
+        name: 'Amin Sultani',
+        role: 'Co-Founder & CEO',
+        content: 'Amin is the CEO at xDefine Corporation. He drives the company’s vision, strategy, and growth as it provides interesting and unique ways for people to get services, as well as representing the interests of the businesses, pros around the world. Amin Sultani has 15 years of experience in management and entrepreneurship, including 7 years of hands-on experience at Pearson Airport. He co-founded ASTR in 2013 with $5,000 personal investment and grew exponentially, making over $500,000 in 2014 and doubling its growth in 2015. Their clients included Fortune 500 companies like McDonald’s, Cargill and Korean Airlines. In 2016 Amin resigned to start xDefine Corporation.',
+    },
+    {
+        photo: assets.storyP_2,
+        name: 'Vlad T. Mafteiu-Scai',
+        role: 'Co-Founder & CDO',
+        content: 'Amin is the CEO at xDefine Corporation. He drives the company’s vision, strategy, and growth as it provides interesting and unique ways for people to get services, as well as representing the interests of the businesses, pros around the world. Amin Sultani has 15 years of experience in management and entrepreneurship, including 7 years of hands-on experience at Pearson Airport. He co-founded ASTR in 2013 with $5,000 personal investment and grew exponentially, making over $500,000 in 2014 and doubling its growth in 2015. Their clients included Fortune 500 companies like McDonald’s, Cargill and Korean Airlines. In 2016 Amin resigned to start xDefine Corporation.',
+    },
+    {
+        photo: assets.storyP_3,
+        name: 'Mindagaus ',
+        role: 'Co-Founder & CDO',
+        content: 'Amin is the CEO at xDefine Corporation. He drives the company’s vision, strategy, and growth as it provides interesting and unique ways for people to get services, as well as representing the interests of the businesses, pros around the world. Amin Sultani has 15 years of experience in management and entrepreneurship, including 7 years of hands-on experience at Pearson Airport. He co-founded ASTR in 2013 with $5,000 personal investment and grew exponentially, making over $500,000 in 2014 and doubling its growth in 2015. Their clients included Fortune 500 companies like McDonald’s, Cargill and Korean Airlines. In 2016 Amin resigned to start xDefine Corporation.',
+    },
+]
+
+export const stories = [
+    {
+        title: 'The lates news title here',
+        content: 'orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    },
+]

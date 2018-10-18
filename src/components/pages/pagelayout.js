@@ -49,12 +49,19 @@ import Terms from './footerlink/terms';
 
 import News from '../pages/main/news/news';
 import NewsPage from '../pages/main/news/news-page';
+import FeaturesPage from '../pages/main/news/features-page';
+import MediaAssetsPage from '../pages/main/news/media-assets-page';
+import MediaAssetsIndividualPage from './main/news/media-assets-individual-page';
+import ContactPage from './main/news/contact-page';
+import TeamPage from './main/news/team-page';
+import Stories from './main/news/stories';
+import StoryPage from './main/news/story-page';
 
 const DefaultLayout = ({component: Component, ...rest}) => {
     window.scrollTo(0,0);
     return (
       <Route {...rest} render={matchProps => (
-        <div className="DefaultLayout">
+        <div>
           <Header/>
           <Component {...matchProps} />
         </div>
@@ -108,7 +115,7 @@ class PageLayout extends Component {
   render() {
     return (
         <Router>
-          <div className="">
+          <div>
             <div className = "container">
                 <DefaultLayout exact path="/" component={Home}/>
                 <DefaultLayout exact path="/becomepro" component={BecomePro}/>
@@ -147,6 +154,15 @@ class PageLayout extends Component {
                 <MainPageLayout exact path="/news" component = {News}/>
 
                 <NewsPageLayout exact path="/news-page" component = {NewsPage}/>
+                <MainPageLayout exact path="/features" component = {FeaturesPage}/>
+                <MainPageLayout exact path="/media" component = {MediaAssetsPage}/>
+
+                <MainPageLayout exact path="/media-individual" component = {MediaAssetsIndividualPage}/>
+                <MainPageLayout exact path="/contact" component = {ContactPage}/>
+
+                <DefaultLayout exact path="/team" component = {TeamPage}/>
+                <DefaultLayout exact path="/stories" component = {Stories}/>
+                <NewsPageLayout exact path="/story-page" component={StoryPage}/>
 
             </div>
             <Footer/>

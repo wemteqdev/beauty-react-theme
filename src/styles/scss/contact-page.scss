@@ -1,0 +1,87 @@
+.contact {
+    margin-top:125px;
+    margin-bottom: 64px;
+
+    .title {
+        font-family: NotoSansDisplay;
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 0.5px;
+        color: #1a181b;
+    }
+    .sub-title {
+        margin-top: 8px ;
+        font-family: NotoSansDisplay;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.7;
+        letter-spacing: 0.3px;
+        color: #1a181b;
+    }
+    .contacts-list {
+        margin-top: 32px ;
+        margin-bottom: 60px ;
+        padding: 0 24px ;
+        .contact-info {
+            margin-bottom: 44px ;
+
+            .country {
+                font-family: NotoSansDisplay;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .contents {
+                .content {
+                    margin-top: 12.6px ;
+
+                    .detail {
+                        font-family: NotoSansDisplay;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.4;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                    }
+                    .link {
+                        text-decoration: none ;
+                        font-family: NotoSansDisplay;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.6;
+                        letter-spacing: normal;
+                        color: #ff4365;
+                    }
+                }
+            }
+        }
+    }
+    .subscribe {
+        .subscribe-form {
+            margin-top: 32px ;
+
+            .form-control {
+                margin-bottom: 40px;
+                border: none;
+        
+                input {
+                    border: none !important;
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}

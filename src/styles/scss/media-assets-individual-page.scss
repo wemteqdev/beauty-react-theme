@@ -1,0 +1,109 @@
+.media-asset-individual {
+    margin-top: 125px ;
+    margin-bottom: 64px;
+    .media-asset-list-block{
+        color: #1a181b;
+        .title{
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+        }
+        .sub-title {
+            margin-top: 8px ;
+            .category {
+                font-size: 20px;
+                font-family: NotoSansDisplay;
+                font-size: 20px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.7;
+                letter-spacing: 0.3px;
+            }
+            .results {
+                font-family: NotoSansDisplay;
+                font-size: 15px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: normal;
+            }
+        }
+        .media-assets-list {
+            margin-top: 56px ;
+    
+            img {
+                width: 100% ;
+                height: 152px;
+                margin-bottom: 16px ;
+            }
+            a {
+                text-decoration: underline ;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #ff4365;
+            }
+            .media-logo {
+                margin-bottom: 34px ;
+                font-family: NotoSansDisplay;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: var(--dark);
+            }
+        }
+    }
+    .filter-block{
+        .filter-btn-group{
+            margin-top:36px;
+            .btn {
+                margin-right:20px;
+                &:last-child{
+                    margin-right:0px;
+                }
+            }
+        }
+    }
+    .filter-option-block {
+        .title{
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+            color: #1a181b;
+            margin-top:44px;
+        }
+        .category-label{
+            font-size: 13px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #1a181b;
+            margin-top:26px;
+            margin-bottom: 13px;
+        }
+        .checkbox{
+            height: 32px;
+            display: flex;
+            align-items: center;
+            margin-bottom:8px;
+        }
+    }
+
+
+}

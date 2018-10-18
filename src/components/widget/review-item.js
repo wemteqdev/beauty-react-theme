@@ -1,15 +1,9 @@
 import React from 'react';
 import assets from '../assets';
+import ReviewHeader from './review-header';
 
-// import {
-//     Link    
-// } from 'react-router-dom';
+class ReviewItem extends React.Component {
 
-class ImageTitleDesMorePic extends React.Component {
-
-    // constructor(props) {
-    //     super(props);
-    // }
 
     renderMorepics(pics){
         var images = pics.map((item, index)=>{
@@ -29,24 +23,38 @@ class ImageTitleDesMorePic extends React.Component {
         return images;
     }
 
+    renderRating(cardinfo){
+        let ratings = [];
+        for(var i = 0; i < 5; i ++){
+            if(i < cardinfo.rating)
+                ratings.push(<img alt="..." className = "rating-star" src = {assets.filledstar} key = {i}/>);
+            else
+                ratings.push(<img alt="..." className = "rating-star" src = {assets.blankstar} key = {i}/>);
+        }
+        return (
+            <div className = "rating-container">
+                {ratings}
+                <span>({cardinfo.customers})</span>
+            </div>
+        )
+
+    }
+
     render() {
 
         const itemInfo = this.props.itemInfo;
         const className = this.props.className;
 
         return (
-            <div className = {`${className} itdmp`}>
-                <div>
-                    <div className = "item-img" style = {
-                            {background:`url(${itemInfo.asset})`}
-                    }></div>
+            <div className = {`${className} review-item`}>
+                <ReviewHeader reviewInfo = {itemInfo}/>
+                <div className = "categories">
+                    {itemInfo.categories.map((category, index) => {
+                        return <span className="category mr-2" key={index}>{category}</span>
+                    })}
                 </div>
-                <div className = "category">{itemInfo.kind} · {itemInfo.subkind}</div>
-                <div className = "title">
-                    {itemInfo.title}
-                </div>
-                <div className = "description">
-                    {itemInfo.description}
+                <div className = "content">
+                    {itemInfo.content}
                 </div>
                 <div className = "more-pics-list">
                     {this.renderMorepics(itemInfo.pics)}
@@ -68,4 +76,4 @@ class ImageTitleDesMorePic extends React.Component {
         );
     }
 }
-export default ImageTitleDesMorePic;
+export default ReviewItem;

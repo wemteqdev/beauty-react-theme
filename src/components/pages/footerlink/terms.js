@@ -4,7 +4,7 @@ import DefaultSearchBar from '../../widget/searchbox/defaultSearchBar';
 import TreeMenu from '../../widget/tree-menu';
 import { termsMenu } from '../../widget/dummyData';
 
-class ForPros extends Component {
+class Terms extends Component {
     render(){
         return (
             <div className = "terms-page row">
@@ -287,4 +287,4 @@ class ForPros extends Component {
         );
     }
 }
-export default ForPros;
+export default Terms;

@@ -10,12 +10,12 @@ class FilterItemList extends React.Component {
     // }
 
     renderItmes = (arr) => {
-        const colClass = (this.props.withmap)?'ola-col-6':'ola-col-3';
+        const colClass = (this.props.withmap)?'col-md-6 col-sm-12':'col-md-3 col-sm-6';
         const carditems =  arr.map((item,index) =>(
             <CardItem colClass = {colClass} cardinfo = {item} key={index}/>
         ));
         return (
-            <div className="cardlist-container ola-row rp-12">
+            <div className="cardlist-container row">
                 {carditems}
             </div>
         )

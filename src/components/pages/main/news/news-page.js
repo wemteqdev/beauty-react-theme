@@ -1,13 +1,15 @@
 import React from 'react';
-// import ImageTitleDesMorePic from '../../../widget/image-title-des-morepic';
-// import * as dummyData from '../../../widget/dummyData';
+import ReviewItem from '../../../widget/review-item';
+import * as dummyData from '../../../widget/dummyData';
 // import SearchBarWithBorderBottom from '../../../widget/searchbox/searchbar-with-bottom-border';
 // import CheckBox from '../../../widget/checkbox';
 // import { connect} from 'react-redux';
 // import * as searchActions from '../../../../actions/searchActions';
-// import OlaPagenation from '../../../widget/ola-pagenation';
+import OlaPagenation from '../../../widget/ola-pagenation';
 import assets from '../../../assets';
 import {Link} from 'react-router-dom';
+
+import OlaInput from "../../../widget/ola-input";
 
 class NewsPage extends React.Component{
 
@@ -22,14 +24,16 @@ class NewsPage extends React.Component{
         return pathhtml;
     }
 
+    onChangePage = (selected) => {
+    }
+
     render(){
 
         const path = ["Home","Blog","The Category","John Lewis Edinburg"];
 
         return(
             <div className = "news-page">
-                <div className= "image-header" style  = {{background:`url(${assets.testbanner})`, boxSizing:'border-box'}}>
-                </div>
+                <div className= "image-header" style  = {{background:`url(${assets.testbanner})`, boxSizing:'border-box'}}></div>
                 <div className = "news-page-wrapper">
                     <div className = "nav-header">
                         <Link to = '/help' className = "help-page-nav-item">
@@ -77,12 +81,39 @@ class NewsPage extends React.Component{
                     of millions.
                     </div>
 
-                    <div className = "review-block">
-                        <div className = "review-header">
+                    <div className = "row mb-5 review-block">
+                        <div className = "review-header col-12 d-flex justify-content-between">
                             <div className = "title">Reviews</div>
                             <span className = "filter-icon">
                                 <img alt="..." src = {assets.filterIcon}/>
                             </span>
+                        </div>
+                        <div className="review-comment col-md-6 col-sm-12">
+                            <div className = "comment-header">
+                                New Comment
+                            </div>
+                            <div className = "comment-content">
+                                <OlaInput className = "comment-input" type = "text" placeholder = "Write Your Comment"/>
+                                <div className = "comment-action d-flex justify-content-between">
+                                    <div className = "comment-icons">
+                                        <img alt="..." src = {assets.emoji}/>
+                                        <img className="ml-4" alt="..." src = {assets.camera}/>
+                                    </div>
+                                    <button className ="btn ola-btn-bordered s-btn btn-w-92" onClick = {null}>Post</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className = "review-list-block col">
+                            <div className = "row mb-4">
+                                <ReviewItem itemInfo = {dummyData.reviews[0]} className = "col-12 my-3"/>
+                                <ReviewItem itemInfo = {dummyData.reviews[1]} className = "col-12 my-3"/>
+                                <div className = "col">
+                                    <div className = "border-bottom"></div>
+                                </div>
+                            </div>
+
+                            <OlaPagenation total = {50} current = {1} onChange = {this.onChangePage}/>
                         </div>
                     </div>
                 </div>

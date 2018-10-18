@@ -1,0 +1,262 @@
+.story-page{
+    margin-top: 64px ;
+
+    .image-header{
+        height:432px;
+        box-sizing: border-box;
+        width: 1280px;
+        margin: 0 -120px;
+        padding: 32px 120px 0 120px ;
+        overflow: hidden;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        position: relative;
+
+        .help-page-nav-item{
+            font-size: 15px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: #1a181b;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            img{
+                margin-right:6px;
+            }
+            color: white;
+        }
+        .page-title{
+            margin-top:44px;
+            font-size: 34px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.32;
+            letter-spacing: 0.5px;
+            color: white;
+        }
+        .nav-path {
+            display: flex;
+            margin-top:24px;
+            &>.nav-path-item{
+                font-size: 15px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: normal;
+                color: rgba(26, 24, 27, 0.4);
+                &:after{
+                    content: "/";
+                    margin-left:3px;
+                    margin-right:3px;
+                }
+                &:last-child{
+                    color:#ff4365;
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+
+    }
+    .story-page-wrapper {
+        .news-page-wrapper{
+            margin-top:64px;
+            .date-tags{
+                display: flex;
+                align-items: center;
+                .ola-oval-4{
+                    margin:5px;
+                }
+                .date{
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.4;
+                    letter-spacing: normal;
+                    color: #1a181b;
+                }
+                .tags-group{
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.4;
+                    letter-spacing: normal;
+                    color: rgba(26, 24, 27, 0.4);
+                }
+            }
+
+            .kind-subkind{
+                display: flex;
+                font-size: 12px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.17;
+                letter-spacing: normal;
+                color: rgba(26, 24, 27, 0.6);
+                span {
+                    margin-right:2px;
+                }
+                margin-top:12px;
+                margin-bottom:24px;
+            }
+            .description{
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #1a181b;
+            }
+            .description-image{
+                width: 100%;
+                height:340px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-top:64px;
+                margin-bottom:64px;
+
+            }
+
+            .review-block {
+                margin-top: 64px;
+                .review-header {
+                    .title {
+                        font-family: NotoSansDisplay;
+                        font-size: 24px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.67;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                    }
+                }
+                .review-comment {
+                    margin-top: 25px;
+
+                    .comment-header {
+                        font-family: NotoSansDisplay;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.4;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                    }
+
+                    .comment-content {
+                        margin-top: 12px;
+
+                        .ola-input {
+                            width: 100%;
+                        }
+
+                        .comment-action {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .review-list-block {
+                    margin-top: 44px ;
+                    .border-bottom {
+                        border-bottom: solid 1px rgba(26, 24, 27, 0.03);
+                    }
+                }
+            }
+        }
+        .story-searchbar-block {
+            margin-top:44px;
+            font-size: 15px ;
+
+            .search-bar {
+                width: 100% ;
+            }
+
+            .title {
+                font-family: NotoSansDisplay;
+                font-size: 20px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.7;
+                letter-spacing: 0.3px;
+                color: #1a181b ;
+            }
+
+            a {
+                display: block ;
+                margin-bottom: 20px ;
+
+                font-family: NotoSansDisplay;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #ff4365;
+            }
+
+            .popularCategory {
+                margin-top: 44px ;
+                .categories {
+                    margin-top: 28px ;
+                }
+            }
+            .lastStories {
+                margin-top: 72px ;
+                .story {
+                    .title {
+                        margin-top: 20px ;
+
+                        font-family: NotoSansDisplay;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.6;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                    }
+                    .content {
+                        font-family: NotoSansDisplay;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.67;
+                        letter-spacing: normal;
+                        color: #1a181b;
+                    }
+                    a {
+                        margin-top: 4px ;
+                    }
+                }
+                &>a{
+                    margin-top: 40px ;
+
+                    font-family: NotoSansDisplay;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.6;
+                    letter-spacing: normal;
+                    color: #1a181b ;
+                }
+            }
+        }
+    }
+}

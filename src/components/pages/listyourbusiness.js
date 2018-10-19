@@ -13,12 +13,18 @@ import ProductDealsList from '../widget/product-deals-list';
 import BecomePartnerList from '../widget/become-partner-list';
 import BasePage from './BasePage';
 
+import {isMobile} from 'react-device-detect';
+
 class ListYourBusiness extends BasePage {
   render() {
     return (
         <div className = "listyourbusiness-page">
-            <SiteTitle/>
-            <SearchBox/>
+            { !isMobile &&
+                <div>
+                    <SiteTitle/>
+                    <SearchBox/>
+                </div>
+            }
             <HomeTabbar/>
             <CommonBanner 
                 title = "Introducing In-Home"

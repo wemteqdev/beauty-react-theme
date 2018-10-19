@@ -23,7 +23,7 @@ class SearchBox extends React.Component {
     }
     render() {
         return (
-            <div className = "searchbox-container container" style={{width: 'auto'}}>
+            <div className = "container-fluid">
                 <OutSideEvent onOutClick = {this.props.handleOutClickSearchBar}>
                     <div>
                         <SearchBar 

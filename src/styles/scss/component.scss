@@ -206,7 +206,7 @@
 }
 
 .banner-btn {
-    width: 160px;
+    // width: 160px;
     height: 48px;
     font-size: 15px;
     font-weight: 600;
@@ -246,7 +246,8 @@
     border: solid 3px #ffffff;
     display: block;
     top: 0px;
-    right: 0px;
+    margin-left: 14px ;
+    // right: 0px;
     font-family: NotoSansDisplay;
     font-size: 10px;
     font-weight: 600;

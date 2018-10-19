@@ -5,6 +5,8 @@ import { Arrow } from './icons';
 
 import {Link} from 'react-router-dom';
 
+import {isMobile} from 'react-device-detect';
+
 class CardList extends React.Component {
 
     constructor(props) {
@@ -46,8 +48,12 @@ class CardList extends React.Component {
     }
 
     renderItmes = (arr) => {
+        let colClass = 'col-lg-4 col-md-12';
+        if (isMobile) {
+            colClass = 'col-12';
+        }
         const carditems =  arr.map((item,index) =>(
-            <CardItem colClass = 'col-lg-4 col-md-12' cardinfo = {item} key={index}/>
+            <CardItem colClass = {colClass} cardinfo = {item} key={index}/>
         ));
         return (
             <div className="cardlist-container row">

@@ -3,7 +3,7 @@
     align-items: center;
     align-content: center;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
-    width:240px;
+    width: 100% ;
     img {
         height: 72px;
         object-fit: contain;
@@ -15,7 +15,20 @@
         font-weight: 600;
         line-height: 72px;
     }
-} 
+}
+
+.tabitem-mobile-container {
+    .title {
+        font-family: NotoSansDisplay;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #1a181b ;
+    }
+}
 
 // @media only screen and (max-width: 1246px) {
 //     .tabitem-container{

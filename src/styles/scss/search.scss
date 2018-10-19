@@ -5,7 +5,7 @@ $margin-left:101px;
 .listyourbusiness-page {
     .searchbox-container {
         margin-top:64px;
-        margin-bottom:110px;
+        // margin-bottom:110px;
     }
 }
 
@@ -97,76 +97,60 @@ $margin-left:101px;
     }
 }
 
+.search-btn {
+    font-size: 14px;
+    color:$AltHigh;
+    // padding:11px;
+    // float:right;
+    height:44px;
+    width: 100%;
+    // margin-right:8px;
+}
+
 .searchbox-container{
-    position: relative;
-    // margin-left:$margin-left;
-    display: table;
-    .search-bar {
-        width: 718px;
-        display: inline-flex;
-        align-items: center;
-        height: 60px;
-        box-shadow: 0 2px 2px 0 rgba(126, 128, 128, 0.12), 0 0 1px 0 rgba(126, 128, 128, 0.14);
-        background-color: $AltHigh;
-        border: solid 1px $ListLow;
-        .search-img{
-            text-align: center;
-            width:52px;
-            img{
-                vertical-align:middle;
-            }
-        }
-        .search-bar-input-container {
-            input {
-                height:100%;
-                width:260px;
-                margin-right: 72px;
-                font-size: 15px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.4;
-                letter-spacing: normal;
-                color: #1a181b;
-            }
+    margin-left:$margin-left;
+    margin-right: 170px ;
 
+    .search-img{
+        text-align: center;
+        width:52px;
+        img{
+            vertical-align:middle;
         }
-
-        .search-bar-country-container {
-            width:133px + 24px + 24px;
-            .country-name {
-                margin-left: 24px;
-                width: 133px;
-                font-size: 15px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.4;
-                letter-spacing: normal;
-                color: #1a181b;
-            }
-        }
-        .Line {
-            vertical-align: middle;
-            height: 36px;
-            border: solid 1px rgba(26, 24, 27, 0.1);
-        }
-
-        .search-btn-container{
-            display: table-cell;
-            vertical-align: middle;
-            width:140px;
-            
-        }
-        .search-btn {
-            font-size: 14px;
-            color:$AltHigh;
-            padding:11px;
-            float:right;
-            height:44px;
-            width: 100%;
-            margin-right:8px;
-        }
+    }
+    input {
+        height:100%;
+        width: 100%;
+        // margin-right: 72px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: #1a181b;
+    }
+    
+    .country-name {
+        height: 44px ;
+        // margin-left: 24px;
+        // width: 133px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        color: #1a181b;
+    }
+    .search-btn {
+        font-size: 14px;
+        color:$AltHigh;
+        // padding:11px;
+        // float:right;
+        height:44px;
+        width: 100%;
+        // margin-right:8px;
     }
 
     .search-result-container{
@@ -187,7 +171,7 @@ $margin-left:101px;
         position: absolute;
         background: #fff;
         z-index: 10;
-        width: 718px;
+        padding-right: 10rem ;
         box-shadow: 0 2px 2px 0 rgba(126, 128, 128, 0.12), 0 0 1px 0 rgba(126, 128, 128, 0.14);
         background-color: #ffffff;
         border: solid 1px rgba(26, 24, 27, 0.1);

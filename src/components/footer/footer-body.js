@@ -66,7 +66,7 @@ class FooterBody extends Component {
                     </div>
                 </div>
 
-                <div className = "col-md-3 col-sm-6 col-xs-12">
+                <div className = "col-md-3 col-sm-6 col-xs-12 d-flex justify-content-md-end">
                     <div className = 'connect-us'>
                         <div className = "footer-list-title">
                             Connect With Us

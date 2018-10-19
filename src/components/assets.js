@@ -105,6 +105,8 @@ import more           from '../assets/images/icons/more.svg';
 import left_arrow_medium_white from '../assets/images/arrow/icons-black-icons-dropdown-arrow-medium-link.svg';
 import arrowright        from '../assets/images/arrow/arrow-right-medium-black.svg';
 
+import user           from '../assets/images/icons/user.svg';
+import current_location           from '../assets/images/icons/current-location.svg';
 
 export default {
     logo,
@@ -187,5 +189,7 @@ export default {
     more, 
     left_arrow_medium_white, 
     arrowright, 
+    user, 
+    current_location, 
 
 }

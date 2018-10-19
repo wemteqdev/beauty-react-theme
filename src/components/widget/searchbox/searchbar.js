@@ -12,6 +12,8 @@ import * as http from '../../http';
 // import createBrowserHistory from 'history/createBrowserHistory'
 import {Redirect } from 'react-router-dom'
 
+import {isMobile} from 'react-device-detect';
+
 // const history = createBrowserHistory({forceRefresh:false})
 
 // const propTypes = {
@@ -136,34 +138,67 @@ class SearchBar extends React.Component {
     
     render() {
         // const toSearch = (this.props.searchBarClicked);
-        return (
-
-            <div className = "search-bar">
-                {this.renderRedirect()}
-                <span className = "search-img">
-                        <img alt="..." src = {assets.search}/>
-                </span>
-                <div className = "search-bar-input-container">
-                    <input 
-                        className = "none-border-input"
-                        type = "text"
-                        name = "query"
-                        onChange = {this.onChange}
-                        onKeyDown = {this.onKeyDown}
-                        onClick = {this.onClick}
-                        value = {this.props.query} 
-                    />
+        if (!isMobile) {
+            return (
+                <div className = "searchbox-container shadow-none border bg-white py-2 mb-0">
+                    {this.renderRedirect()}
+                    <div className = "container-fluid">
+                        <div className = "row">
+                            <div className = "col-lg-6 col-md-12 d-flex align-items-center">
+                                <div className = "row">
+                                    <div className = "col-2">
+                                        <img alt="..." src = {assets.search40}/>
+                                    </div>
+                                    <div className = "col-10">
+                                        <input 
+                                            className = "none-border-input"
+                                            type = "text"
+                                            name = "query"
+                                            onChange = {this.onChange}
+                                            onKeyDown = {this.onKeyDown}
+                                            onClick = {this.onClick}
+                                            value = {this.props.query} 
+                                            placeholder = "Try “Beauty & Spa”"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className = "col-lg-3 col-md-12 border-left">
+                                <div  className = "country-name d-flex align-items-center justify-content-center">New York, Nj</div>
+                            </div>
+                            <div className = "col-lg-3 col-md-12">
+                                <button className = "btn ola-btn-primary search-btn" onClick = {this.onPressSearchBtn}>Search</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className = "Line"></div>
-                <div className = "search-bar-country-container">
-                    <div  className = "country-name">New York, Nj</div>
+            );
+        } else {
+            return (
+                <div className = "row">
+                    {this.renderRedirect()}
+                    <div className = "col-12 shadow-none border bg-white py-2 d-flex align-items-center">
+                        <img className="mr-3" alt="..." src = {assets.search40}/>
+                        <input 
+                            className = "none-border-input"
+                            type = "text"
+                            name = "query"
+                            onChange = {this.onChange}
+                            onKeyDown = {this.onKeyDown}
+                            onClick = {this.onClick}
+                            value = {this.props.query} 
+                            placeholder = "Try “Beauty & Spa”"
+                        />
+                    </div>
+                    <div className = "col-12  shadow-none border bg-white py-2 mt-2">
+                        <img className="mr-3" alt="..." src = {assets.current_location}/> New York, Nj
+                    </div>
+                    <div className = "col-12 px-0 mt-2">
+                        <button className = "btn ola-btn-primary search-btn" onClick = {this.onPressSearchBtn}>Search</button>
+                    </div>
                 </div>
-                <div className = "search-btn-container">
-                    <button className = "btn ola-btn-primary search-btn" onClick = {this.onPressSearchBtn}>Search</button>
-                </div>
-            </div>
-
-        );
+            );
+        }
     }
 }
 

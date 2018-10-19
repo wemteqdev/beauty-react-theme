@@ -5,12 +5,44 @@ import SearchResultListItem from "./searchResultListItem";
 // import * as searchActions from '../../../actions/searchActions';
 import { connect } from 'react-redux';
 
+import {isMobile} from 'react-device-detect';
 
 class SearchDropDownPanel extends React.Component {
 
     // constructor(props) {
     //     super(props);
     // }
+
+    render_searchedResultList = (searchedResultList) => {
+        return (
+            <div className = "search-result-container">
+                <div className = "search-result">
+                    <ul className = "list-unstyled">
+                        {searchedResultList}
+                    </ul>
+                </div>
+            </div>
+        )
+    }
+
+    render_recentSearchResult = (recentSearchResult) => {
+        return (
+            <div className = "recent-search-container">
+                <div className = "hint-text">
+                    Explore "search query"
+                </div>
+                <SearchCategory/>
+                <div className = "recent-search-text">
+                    Recent Searches
+                </div>
+                <div className = "recent-search">
+                    <ul className = "list-unstyled">
+                        {recentSearchResult}
+                    </ul>
+                </div>
+            </div>
+        )
+    }
 
     render() {
 
@@ -29,37 +61,42 @@ class SearchDropDownPanel extends React.Component {
 
         // console.info(this.props.isTyping);
 
-        if(this.props.isTyping){
-            return (
-                <div className = {classname}> 
-                    <div className = "search-result-container">
-                        <div className = "search-result">
-                            <ul className = "list-unstyled">
-                                {searchedResultList}
-                            </ul>
+        if (!isMobile) {
+            if(this.props.isTyping){
+                return (
+                    <div className = "searchbox-container mt-0">
+                        <div className = {classname}>
+                            {this.render_searchedResultList(searchedResultList)}
                         </div>
                     </div>
-                </div>
-            );
-        }else{
-            return (
-                <div className = {classname}> 
-                    <div className = "recent-search-container">
-                        <div className = "hint-text">
-                            Explore "search query"
-                        </div>
-                        <SearchCategory/>
-                        <div className = "recent-search-text">
-                            Recent Searches
-                        </div>
-                        <div className = "recent-search">
-                            <ul className = "list-unstyled">
-                                {recentSearchResult}
-                            </ul>
+                );
+            }else{
+                return (
+                    <div className = "searchbox-container mt-0">
+                        <div className = {classname}>
+                            {this.render_recentSearchResult(recentSearchResult)}
                         </div>
                     </div>
-                </div>
-            );
+                );
+            }
+        } else {
+            if(this.props.isTyping){
+                return (
+                    <div className = "searchbox-container m-0">
+                        <div className = {`${classname} row`} style={{marginTop: "-105px"}}> 
+                            {this.render_searchedResultList(searchedResultList)}
+                        </div>
+                    </div>
+                );
+            }else{
+                return (
+                    <div className = "searchbox-container m-0">
+                        <div className = {`${classname} row`} style={{marginTop: "-105px"}}> 
+                            {this.render_recentSearchResult(recentSearchResult)}
+                        </div>
+                    </div>
+                );
+            }
         }
 
         

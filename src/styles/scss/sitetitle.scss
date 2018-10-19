@@ -1,6 +1,6 @@
 .site-title {
     margin-top: 204px;
-    margin-left: 103px;
+    padding-left: 103px;
     .site-title-comment{
         margin-top:21px;
         font-size: 34px;
@@ -22,4 +22,8 @@
     letter-spacing: 0.5px;
     color: #1a181b;
     margin-bottom:32px;
+    img {
+        width: 24px;
+        height: 24px;
+    }
 }

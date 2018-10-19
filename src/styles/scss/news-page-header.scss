@@ -6,9 +6,7 @@
     box-sizing: border-box;
     z-index: 10;
     background:#fff;
-    .ola-navbar {
-        height:64px;
-        z-index: 10;
+    .navbar {
         .nav-link {
             color: #1a181b !important;
         }
@@ -20,19 +18,20 @@
 
         .message-group{
             margin-left:24px;
-            margin-top:3px;
+            // margin-top:3px;
             position: relative;
         }
 
         .shoping-card{
             margin-left:26px;
-            margin-top:3px;
-            position: relative;
+            // margin-top:3px;
+            // position: relative;
         }
 
         .user-option{
             display: inline-flex;
             margin-left:24px;
+            padding-top: .2rem ;
             .user-img{
                 width:32px;
                 height:32px;

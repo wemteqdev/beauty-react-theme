@@ -10,7 +10,7 @@ class SearchTopicCateogryItem extends React.Component {
 
     renderItems(items){
         const itemlist = items.map((item, index)=>(
-            <li>
+            <li key={index}>
                 <Link to = "/help-topic" className = "red-link">{item}</Link>
             </li>
         ));

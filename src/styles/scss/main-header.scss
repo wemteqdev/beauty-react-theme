@@ -5,9 +5,7 @@
     padding-right:120px;
     box-sizing: border-box;
     // width:1280px;
-    .ola-navbar {
-        height:64px;
-        z-index: 10;
+    .navbar {
         .nav-link {
             color: #1a181b;
         }
@@ -17,18 +15,18 @@
             }
         }
         .nav-search{
-            width: 214px;
+            // width: 214px;
             display: block;
             // height: 64px;
             display: inline-flex;
             align-items: center;
-            margin-left:24px;
+            // margin-left:24px;
 
         }
 
         .user-option{
             display: inline-flex;
-            margin-left:24px;
+            // margin-left:24px;
             .user-img{
                 width:32px;
                 height:32px;

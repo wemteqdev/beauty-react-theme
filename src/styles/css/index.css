@@ -837,20 +837,22 @@ i.arrow.down {
 
 .badge {
   position: absolute;
+  padding: 1px;
   background-color: #ff4365;
   color: #fff;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   border: solid 3px #ffffff;
   display: block;
-  top: -14px;
-  right: -10px;
-  font-size: 12px;
+  top: 0px;
+  right: 0px;
+  font-family: NotoSansDisplay;
+  font-size: 10px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
-  line-height: 20px;
+  line-height: 1.17;
   letter-spacing: normal;
   text-align: center;
 }
@@ -1066,6 +1068,21 @@ body {
 
 .ola-hide {
   display: none;
+}
+
+.navbar .nav-item {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+.navbar .nav-item a {
+  color: #1a181b;
+}
+.navbar .active a {
+  color: #ff4365;
 }
 
 .ola-navbar {
@@ -3784,35 +3801,25 @@ div.ardp-date-picker .date-picker-trigger:active {
   background-image: linear-gradient(127deg, #2ec4b6, #288690);
   height: 338px;
 }
-.help-header .ola-navbar {
-  background: transparent !important;
-  position: relative !important;
-}
-.help-header .ola-navbar .nav-link {
-  color: #ffffff !important;
-}
-.help-header .ola-navbar .nav-item.active .nav-link {
-  color: #ffffff !important;
-}
-.help-header .ola-navbar .message-group {
+.help-header .navbar .message-group {
   margin-left: 24px;
   margin-top: 3px;
 }
-.help-header .ola-navbar .shoping-card {
+.help-header .navbar .shoping-card {
   margin-left: 26px;
   margin-top: 3px;
 }
-.help-header .ola-navbar .user-option {
+.help-header .navbar .user-option {
   display: inline-flex;
   margin-left: 24px;
 }
-.help-header .ola-navbar .user-option .user-img {
+.help-header .navbar .user-option .user-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: solid 2px #fff;
 }
-.help-header .ola-navbar .user-option .dropdown-icon {
+.help-header .navbar .user-option .dropdown-icon {
   margin-left: 8px;
 }
 .help-header .title {
@@ -4159,34 +4166,27 @@ div.ardp-date-picker .date-picker-trigger:active {
   padding-right: 120px;
   box-sizing: border-box;
 }
-.main-header .ola-navbar {
-  height: 64px;
-  z-index: 10;
-}
-.main-header .ola-navbar .nav-link {
+.main-header .navbar .nav-link {
   color: #1a181b;
 }
-.main-header .ola-navbar .nav-item.active .nav-link {
+.main-header .navbar .nav-item.active .nav-link {
   color: #1a181b;
 }
-.main-header .ola-navbar .nav-search {
-  width: 214px;
+.main-header .navbar .nav-search {
   display: block;
   display: inline-flex;
   align-items: center;
-  margin-left: 24px;
 }
-.main-header .ola-navbar .user-option {
+.main-header .navbar .user-option {
   display: inline-flex;
-  margin-left: 24px;
 }
-.main-header .ola-navbar .user-option .user-img {
+.main-header .navbar .user-option .user-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: solid 2px #fff;
 }
-.main-header .ola-navbar .user-option .dropdown-icon {
+.main-header .navbar .user-option .dropdown-icon {
   margin-left: 8px;
 }
 .main-header .menu-bar {
@@ -4272,37 +4272,31 @@ div.ardp-date-picker .date-picker-trigger:active {
   z-index: 10;
   background: #fff;
 }
-.news-page-header .ola-navbar {
-  height: 64px;
-  z-index: 10;
-}
-.news-page-header .ola-navbar .nav-link {
+.news-page-header .navbar .nav-link {
   color: #1a181b !important;
 }
-.news-page-header .ola-navbar .nav-item.active .nav-link {
+.news-page-header .navbar .nav-item.active .nav-link {
   color: #1a181b !important;
 }
-.news-page-header .ola-navbar .message-group {
+.news-page-header .navbar .message-group {
   margin-left: 24px;
-  margin-top: 3px;
   position: relative;
 }
-.news-page-header .ola-navbar .shoping-card {
+.news-page-header .navbar .shoping-card {
   margin-left: 26px;
-  margin-top: 3px;
-  position: relative;
 }
-.news-page-header .ola-navbar .user-option {
+.news-page-header .navbar .user-option {
   display: inline-flex;
   margin-left: 24px;
+  padding-top: 0.2rem;
 }
-.news-page-header .ola-navbar .user-option .user-img {
+.news-page-header .navbar .user-option .user-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: solid 2px #fff;
 }
-.news-page-header .ola-navbar .user-option .dropdown-icon {
+.news-page-header .navbar .user-option .dropdown-icon {
   margin-left: 8px;
 }
 .news-page-header .menu-bar {

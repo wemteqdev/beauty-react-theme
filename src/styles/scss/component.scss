@@ -237,20 +237,22 @@
 
 .badge{
     position: absolute;
+    padding: 1px;
     background-color: #ff4365;
     color:#fff;
-    width:20px;
-    height:20px;
+    width:22px;
+    height:22px;
     border-radius: 50%;
     border: solid 3px #ffffff;
     display: block;
-    top:-14px;
-    right:-10px;
-    font-size: 12px;
+    top: 0px;
+    right: 0px;
+    font-family: NotoSansDisplay;
+    font-size: 10px;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
-    line-height: 20px;
+    line-height: 1.17;
     letter-spacing: normal;
     text-align: center;
 

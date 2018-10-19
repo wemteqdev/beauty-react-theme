@@ -4,109 +4,63 @@ import {
     Link    
 } from 'react-router-dom';
 
-const NavItem = props => {
-    const pageURI = window.location.hash + window.location.search;
-    const liClassName = (+props.path === pageURI) ? "nav-item active" : "nav-item";
-    // const aClassName = props.disabled ? "nav-link disabled" : "nav-link"
-    return (
-        <div className={liClassName}>
-            <Link to = {props.path} className = "nav-link">
-                {props.name}
-                {(props.path === pageURI) ? (<span className = "sr-only">(current)</span>): ""}
-            </Link>
-        </div>
-    );
-}
-
-class NavDropdown extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isToggleOn: this.props.dropOpen
-        };
-    }
-    showDropdown(e) {
-        e.preventDefault();
-        this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
-        }));
-        this.props.onToggle();
-    }
-    render() {
-        const classDropdownMenu = 'dropdown-menu' + (this.props.dropOpen ? ' show' : '')
-        // console.log(classDropdownMenu);
-        return (
-            <div className="dropdown">
-                <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"
-                    onClick={(e) => {this.showDropdown(e)}}>
-                    {this.props.name}
-                    <span className = "arrow"><img alt="..." src = {assets.arrowdown}/></span>
-                </Link>
-                <div className={classDropdownMenu} aria-labelledby="navbarDropdown">
-                    {this.props.children}
-                </div>
-            </div>
-        )
-    }
-}
-  
-
 class Navigation extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            dropOpen:false
-        }
-        this.hideDropDown = this.hideDropDown.bind(this);
-        this.onToggle = this.onToggle.bind(this);
-    }
-
-    hideDropDown(e){
-        this.setState({dropOpen:false});
-    }
-
-    showDropdown(e){
-        this.setState({dropOpen:true});
-    }
-    onToggle(){
-        this.setState(prevState => ({
-            dropOpen: !prevState.dropOpen
-        }));
-    }
-
     render() {
         return (
-            <div className="ola-navbar pt-3 fixed-top container-fluid bg-white">
-                <div className="container">
-                    <div className = "nabbar-brand">
-                        <Link to="/">
-                            <img alt="..." src = {assets.logo}/>
-                        </Link>
-                        <NavDropdown name="How It Works" dropOpen = {this.state.dropOpen} onToggle = {this.onToggle}>
-                            <ul className = "list-unstyled">
-                                <li>
-                                    <Link className="dropdown-item" to="/forbusiness" onClick = {this.hideDropDown}>For Business</Link>
-                                </li>
-                                <li>
-                                    <Link className="dropdown-item" to="/forpros" onClick = {this.hideDropDown}>For Professionals</Link>
-                                </li>
-                                <li>
-                                    <Link className="dropdown-item" to="/formembers" onClick = {this.hideDropDown}>For Members</Link>
-                                </li>
-                            </ul>
-                        </NavDropdown>
-                    </div>
-                    <div className="navbar-links">
-                        <NavItem name="List Your Business" path="/"/>
-                        <NavItem name="Become a Pro" path="/becomepro"/>
-                        <NavItem name="Help" path="/help"/>
-                        <NavItem name="Sign Up" path="/signup"/>
-                        <NavItem name="Sign In" path="/singin"/>
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+                <div className = "container">
+                    <Link className="nabbar-brand" to="/">
+                        <img alt="..." src = {assets.logo}/>
+                    </Link>
+
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Language
+                                </a>
+                                <div className="dropdown-menu" aria-labelledby="">
+                                    <Link className="dropdown-item" to="/">English</Link>
+                                    <Link className="dropdown-item" to="/">French</Link>
+                                    <Link className="dropdown-item" to="/">Spanish</Link>
+                                </div>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    How It Works
+                                </a>
+                                <div className="dropdown-menu" aria-labelledby="">
+                                    <Link className="dropdown-item" to="/forbusiness">For Business</Link>
+                                    <Link className="dropdown-item" to="/forpros">For Professionals</Link>
+                                    <Link className="dropdown-item" to="/formembers">For Members</Link>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item active">
+                                <Link className="nav-link" to="/">List Your Business <span className="sr-only">(current)</span></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/becomepro">Become a Pro</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/help">Help</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/signup">Sign Up</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/singin">Sign In</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         );
     }
 }

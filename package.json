@@ -43,6 +43,7 @@
     "babel-plugin-nodejs-import-images": "^1.0.0",
     "fs": "0.0.1-security",
     "react-device-detect": "^1.6.1",
+    "react-localize-redux": "^3.5.0",
     "reactstrap": "^6.5.0"
   }
 }

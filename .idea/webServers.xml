@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5660167c-8869-4146-ad52-4303d15288e4" name="stage aws server" url="http://ec2-user@ec2-35-183-117-134.ca-central-1.compute.amazonaws.com">
+        <fileTransfer host="ec2-user@ec2-35-183-117-134.ca-central-1.compute.amazonaws.com" port="22" privateKey="$PROJECT_DIR$/../../proposal/Freelancer/Amin Sultani/django-key.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

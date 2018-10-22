@@ -4,15 +4,19 @@ import {
     Link    
 } from 'react-router-dom';
 
-// import {isMobile} from 'react-device-detect';
+import {isMobile} from 'react-device-detect';
 
 class Navigation extends React.Component {
    
     render() {
-        // if (!isMobile) {
+        let containerClassName = "container";
+        if (isMobile) {
+          containerClassName = "container mobile_container";
+        }
+            // if (!isMobile) {
             return (
                 <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white">
-                    <div className = "container">
+                    <div className = {containerClassName}>
                         <Link className="nabbar-brand mr-3" to="/">
                             <img alt="..." src = {assets.logo}/>
                         </Link>

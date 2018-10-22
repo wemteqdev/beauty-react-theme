@@ -6,6 +6,8 @@ import {
     Route
 } from 'react-router-dom';
 
+import {isMobile} from 'react-device-detect';
+
 import Header from '../header';
 import HelpHeader from '../header/help-header';
 import MainHeader from '../header/main-header';
@@ -113,10 +115,14 @@ class PageLayout extends Component {
         
     }
   render() {
+    let containerClassName = "container";
+    if (isMobile) {
+      containerClassName = "mobile_container";
+    }
     return (
         <Router>
           <div>
-            <div className = "container">
+            <div className = {containerClassName}>
                 <DefaultLayout exact path="/" component={Home}/>
                 <DefaultLayout exact path="/becomepro" component={BecomePro}/>
                 <DefaultLayout exact path="/search" component={SearchResult}/>

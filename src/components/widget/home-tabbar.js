@@ -13,8 +13,8 @@ class HomeTabbar extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className = "list-title d-flex justify-content-between align-items-baseline">
+            <div className="pt-4">
+                <div className = "list-title mt-0 d-flex justify-content-between align-items-baseline">
                     Explore OlaFic
                     { isMobile &&
                         <img alt="..." src={assets.search}/>

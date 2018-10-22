@@ -1073,6 +1073,10 @@ body {
   border: none;
 }
 
+.mobile_container {
+  padding: 0 32px !important;
+}
+
 .navbar .nav-item {
   font-size: 15px;
   font-weight: normal;
@@ -1154,7 +1158,7 @@ body {
 }
 
 .site-title {
-  margin-top: 204px;
+  margin-top: 140px;
   padding-left: 103px;
 }
 .site-title .site-title-comment {
@@ -1284,7 +1288,11 @@ body {
   visibility: visible;
 }
 
+.listyourbusiness-page {
+  margin-top: 64px;
+}
 .listyourbusiness-page .searchbox-container {
+  position: relative;
   margin-top: 64px;
 }
 

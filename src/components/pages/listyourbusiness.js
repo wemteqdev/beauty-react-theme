@@ -20,7 +20,7 @@ class ListYourBusiness extends BasePage {
     return (
         <div className = "listyourbusiness-page">
             { !isMobile &&
-                <div>
+                <div className="mb-5">
                     <SiteTitle/>
                     <SearchBox/>
                 </div>

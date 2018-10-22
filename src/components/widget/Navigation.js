@@ -13,7 +13,7 @@ class Navigation extends React.Component {
             return (
                 <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white">
                     <div className = "container">
-                        <Link className="nabbar-brand" to="/">
+                        <Link className="nabbar-brand mr-3" to="/">
                             <img alt="..." src = {assets.logo}/>
                         </Link>
 

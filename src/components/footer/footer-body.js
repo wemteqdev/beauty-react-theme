@@ -36,14 +36,15 @@ class FooterBody extends Component {
                             Use OlaFic
                         </div>
                         <ul className = "list-unstyled footer-list-conent">
-                            <li><Link to = "/aboutus" className = "none-decoration">About OlaFic</Link></li>
-                            <li><Link to = "/team" className = "none-decoration">Team</Link></li>
+                            <li><Link to = "/about-olafic" className = "none-decoration">About OlaFic</Link></li>
                             <li><Link to = "/press" className = "none-decoration">Press</Link></li>
-                            <li><Link to = "/blogs" className = "none-decoration">Blogs</Link></li>
+                            <li><Link to = "/stories" className = "none-decoration">Stories</Link></li>
                             <li><Link to = "/careers" className = "none-decoration">Careers</Link></li>
                             <li><Link to = "/categories" className = "none-decoration">Categories</Link></li>
-                            <li><Link to = "/locations" className = "none-decoration">Locations</Link></li>
                             <li><Link to = "/help" className = "none-decoration">Help</Link></li>
+                            <li><Link to = "/marketplace" className = "none-decoration">Marketplace</Link></li>
+                            <li><Link to = "/deals" className = "none-decoration">Deals</Link></li>
+                            <li><Link to = "/trending" className = "none-decoration">Trending</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -81,21 +82,21 @@ class FooterBody extends Component {
                                     <Social name = "news" />
                                     News &amp; Media</Link></li>
                             <li>
-                                <Link to = "/facebook" className = "none-decoration">
+                                <a href="https://www.facebook.com/OlaFic.official/" className = "none-decoration">
                                     <Social name = "facebook" />
-                                    Facebook</Link></li>
+                                    Facebook</a></li>
                             <li>
-                                <Link to = "/instagram" className = "none-decoration">
+                                <a href="https://ca.linkedin.com/company/olafic" className = "none-decoration">
                                     <Social name = "instagram" />
-                                    Instragram</Link></li>
+                                    Instragram</a></li>
                             <li>
-                                <Link to = "/twitter" className = "none-decoration">
+                                <a href="https://twitter.com/OlaFic_Official" className = "none-decoration">
                                     <Social name = "twitter" />
-                                    Twitter</Link></li>
+                                    Twitter</a></li>
                             <li>
-                                <Link to = "/linkedin" className = "none-decoration">
+                                <a href="https://ca.linkedin.com/company/olafic" className = "none-decoration">
                                     <Social name = "linkedin" />
-                                    LinkedIn</Link></li>
+                                    LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>

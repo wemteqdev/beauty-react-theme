@@ -121,7 +121,7 @@ class PageLayout extends Component {
                 <DefaultLayout exact path="/becomepro" component={BecomePro}/>
                 <DefaultLayout exact path="/search" component={SearchResult}/>
 
-                <DefaultLayout exact path="/aboutus" component={AboutUs}/>
+                <DefaultLayout exact path="/about-olafic" component={AboutUs}/>
                 <DefaultLayout exact path="/team" component={Team}/>
                 <DefaultLayout exact path="/press" component={Press}/>
                 <DefaultLayout exact path="/blogs" component={Blogs}/>

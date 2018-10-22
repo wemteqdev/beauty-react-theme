@@ -14,14 +14,16 @@ class HomeTabbar extends React.Component {
     render() {
         return (
             <div>
-                <div className = "list-title d-flex justify-content-between align-items-end">
+                <div className = "list-title d-flex justify-content-between align-items-baseline">
                     Explore OlaFic
-                    <img alt="..." src={assets.search}/>
+                    { isMobile &&
+                        <img alt="..." src={assets.search}/>
+                    }
                 </div>
                 { isMobile &&
                     <SearchBox/>
                 }
-                <div className="row">
+                <div className="row mt-5">
                     <HomeTabbarItem title="Business" asset = {assets.hometab1}/>
                     <HomeTabbarItem title="Professionals" asset = {assets.hometab2}/>
                     <HomeTabbarItem title="Marketplace" asset = {assets.hometab3}/>

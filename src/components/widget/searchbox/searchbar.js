@@ -191,7 +191,7 @@ class SearchBar extends React.Component {
                         />
                     </div>
                     <div className = "col-12  shadow-none border bg-white py-2 mt-2">
-                        <img className="mr-3" alt="..." src = {assets.current_location}/> New York, Nj
+                        <img className="mr-3" alt="..." src = {assets.current_location}/> Mapple Creek, CA
                     </div>
                     <div className = "col-12 px-0 mt-2">
                         <button className = "btn ola-btn-primary search-btn" onClick = {this.onPressSearchBtn}>Search</button>

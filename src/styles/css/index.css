@@ -1085,7 +1085,7 @@ body {
   color: #1a181b;
 }
 .navbar .active a {
-  color: #ff4365;
+  color: #ff4365 !important;
 }
 .navbar .message-group {
   margin-right: 24px;

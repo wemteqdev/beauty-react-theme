@@ -27,7 +27,7 @@ class ListYourBusiness extends BasePage {
             }
             <HomeTabbar/>
             <CommonBanner 
-                title = "Introducing In-Home"
+                title = "Introducing In-Home Services"
                 background = {assets.homeserviceback} buttonTitle = "Explore Olafic In-Home services">
                 <div>
                     Our beauty pros come to your home, office or wherever your <br/> life takes you at salon’s prices

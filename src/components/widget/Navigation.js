@@ -25,7 +25,7 @@ class Navigation extends React.Component {
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Language
+                                        English
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="">
                                         <Link className="dropdown-item" to="/">English</Link>

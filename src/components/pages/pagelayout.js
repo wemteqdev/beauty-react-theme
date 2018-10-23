@@ -164,9 +164,9 @@ class PageLayout extends Component {
                 <MainPageLayout exact path="/media" component = {MediaAssetsPage}/>
 
                 <MainPageLayout exact path="/media-individual" component = {MediaAssetsIndividualPage}/>
-                <MainPageLayout exact path="/contact" component = {ContactPage}/>
+                <MainPageLayout exact path="/contact-us" component = {ContactPage}/>
+                <MainPageLayout exact path="/team" component = {TeamPage}/>
 
-                <DefaultLayout exact path="/team" component = {TeamPage}/>
                 <DefaultLayout exact path="/stories" component = {Stories}/>
                 <NewsPageLayout exact path="/story-page" component={StoryPage}/>
 

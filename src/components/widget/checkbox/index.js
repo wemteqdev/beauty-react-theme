@@ -35,7 +35,7 @@ class Checkbox extends Component {
         const isChecked =  (groups.indexOf(label) >= 0);
 
         return (
-            <div  className="checkbox" onClick = {this.toggleCheckboxChange}>
+            <div className="checkbox" onClick = {this.toggleCheckboxChange}>
                 <img alt="..." src = {(isChecked)?assets.checked:assets.unchecked} />
                 <div className = 'label'>{label}</div>
             </div>

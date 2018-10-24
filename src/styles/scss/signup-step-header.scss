@@ -1,0 +1,54 @@
+.signup-step-header {
+    margin-left:-120px;
+    margin-right:-120px;
+    padding-left:120px;
+    padding-right:120px;
+    box-sizing: border-box;
+    // width:1280px;
+    .Progress-Bar {
+        .Progress-Bar-1 {
+            width: 33%;
+            height: 3px;
+            background-color: #2ec4b6;
+        }
+    }
+
+    .navbar {
+        .nav-link {
+            color: #1a181b;
+        }
+        .nav-item.active{
+            .nav-link {
+                color: #1a181b;
+            }
+        }
+        .nav-search{
+            // width: 214px;
+            display: block;
+            // height: 64px;
+            display: inline-flex;
+            align-items: center;
+            // margin-left:24px;
+
+        }
+
+        .user-option{
+            display: inline-flex;
+            // margin-left:24px;
+            .user-img{
+                width:32px;
+                height:32px;
+                border-radius: 50%;
+                border:solid 2px #fff;
+            }
+            .dropdown-icon {
+                margin-left:8px;
+            }
+
+        }
+    }
+
+    .menu-bar{
+        display: inline-flex;
+    }
+}

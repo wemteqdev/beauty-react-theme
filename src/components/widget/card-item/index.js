@@ -61,7 +61,7 @@ class CardItem extends React.Component {
         const cardinfo = (this.props.cardinfo)?this.props.cardinfo:this.state;
 
         return (
-            <div className = {className} onmouseover = {this.onMouseOver}>
+            <div className = {className} onMouseOver = {this.onMouseOver}>
                 {this.renderContent(cardinfo)}
             </div>
         );

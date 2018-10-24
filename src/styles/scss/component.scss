@@ -82,6 +82,17 @@
     text-transform: capitalize;
 }
 
+.ola-btn-facebook {
+    background-color: #4366b4;
+    height: 48px;
+}
+
+.ola-btn-google {
+    border: solid 2px rgba(26, 24, 27, 0.8);
+    background-color: #ffffff;
+    height: 48px;
+}
+
 .ola-nav-item{
     &.active {
         &>.ola-btn-category, &>div>div>.ola-btn-category {

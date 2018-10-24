@@ -59,6 +59,14 @@ import TeamPage from './main/news/team-page';
 import Stories from './main/news/stories';
 import StoryPage from './main/news/story-page';
 
+import SigninPage from './sign/signin';
+import SignupPage from './sign/signup';
+import ResetPasswordPage from './sign/reset-password';
+import SigninConfirmPage from './sign/signin-confirm';
+
+import SignupStepHeader from '../header/signup-step-header';
+import SignupStep1 from './sign/signup/step1';
+
 const DefaultLayout = ({component: Component, ...rest}) => {
     window.scrollTo(0,0);
     return (
@@ -104,6 +112,27 @@ const NewsPageLayout = ({component: Component, ...rest}) => {
     )
 };
 
+const SignPageLayout = ({component: Component, ...rest}) => {
+  return (
+    <Route {...rest} render={matchProps => (
+      <div>
+        <Component {...matchProps} />
+      </div>
+    )} />
+  )
+};
+
+const SignupStepPageLayout = ({component: Component, ...rest}) => {
+  console.log(rest);
+  return (
+    <Route {...rest} render={matchProps => (
+      <div>
+        <SignupStepHeader />
+        <Component {...matchProps} />
+      </div>
+    )} />
+  )
+};
 
 class PageLayout extends Component {
 
@@ -170,6 +199,12 @@ class PageLayout extends Component {
                 <DefaultLayout exact path="/stories" component = {Stories}/>
                 <NewsPageLayout exact path="/story-page" component={StoryPage}/>
 
+                <DefaultLayout exact path="/signin" component={SigninPage}/>
+                <SignPageLayout exact path="/signup" component={SignupPage}/>
+                <SignPageLayout exact path="/forgot-password" component={ResetPasswordPage}/>
+                <DefaultLayout exact path="/signin-confirm" component={SigninConfirmPage}/>
+
+                <SignupStepPageLayout exact path="/signup-step1" component={SignupStep1} step={1}/>
             </div>
             <Footer/>
           </div>

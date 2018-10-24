@@ -40,6 +40,7 @@ import yourTI3 from '../assets/images/yourtime/image-3.jpg';
 import logTitleSVG from '../assets/images/logo-logo-color-symbol-text-1-x.svg';
 import message from '../assets/images/icons/message.svg';
 import facebookBlack from '../assets/images/icons/facebook-black.svg';
+import google from '../assets/images/icons/google.svg';
 import instagramBlack from '../assets/images/icons/instagram-black.svg';
 import news from '../assets/images/icons/news.svg';
 import twitterBlack from '../assets/images/icons/twitter-black.svg';
@@ -102,7 +103,8 @@ import info_s           from '../assets/images/icons/info-s.svg';
 import emoji           from '../assets/images/icons/emoji.svg';
 import camera           from '../assets/images/icons/camera.svg';
 import more           from '../assets/images/icons/more.svg';
-import left_arrow_medium_white from '../assets/images/arrow/icons-black-icons-dropdown-arrow-medium-link.svg';
+import left_arrow_medium_white from '../assets/images/arrow/icons-white-icons-dropdown-arrow-medium-link.svg';
+import left_arrow_medium_black from '../assets/images/arrow/icons-black-icons-dropdown-arrow-medium-link.svg';
 import arrowright        from '../assets/images/arrow/arrow-right-medium-black.svg';
 
 import user           from '../assets/images/icons/user.svg';
@@ -141,6 +143,7 @@ export default {
     logTitleSVG,
     message,
     facebookBlack,
+    google, 
     instagramBlack,
     news,
     twitterBlack,
@@ -188,6 +191,7 @@ export default {
     camera,
     more, 
     left_arrow_medium_white, 
+    left_arrow_medium_black, 
     arrowright, 
     user, 
     current_location, 

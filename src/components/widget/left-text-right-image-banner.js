@@ -14,7 +14,7 @@ class LeftTextRightImageBanner extends React.Component {
                 <div className = "banner-header">{title}</div>
                 <div className = "row">
                     <div className = "col-md-8 col-sm-12">
-                        <div className = "text mb-5 mr-5 pr-5">{text}</div>
+                        <div className = "text marginBottom-64 mr-5 pr-5">{text}</div>
                         <button type="button" className="btn ola-btn-primary banner-btn m-btn">{buttonTitle}</button>     
                     </div>
                     <div className = "col-md-4 col-sm-12">

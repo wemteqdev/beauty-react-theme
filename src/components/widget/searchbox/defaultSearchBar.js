@@ -8,8 +8,9 @@ class DefaultSearchBar extends React.Component {
 
     render (){
         const placeholder = (this.props.placeholder)?this.props.placeholder:"";
+        let className = this.props.className ;
         return(
-            <div className = "search-bar">
+            <div className = {`search-bar ${className}`}>
                 <span className = "search-img">
                     <img alt="..." src = {assets.search40}/>
                 </span>

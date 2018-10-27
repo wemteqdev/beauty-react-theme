@@ -4,7 +4,7 @@ import * as dummyData from '../../../widget/dummyData';
 class MediaAssetsPage extends React.Component{
     render(){
         return(
-            <div className = "media-assets mb-5">
+            <div className = "media-assets marginBottom-64">
                 <div className = "title">
                     Media Assets
                 </div>

@@ -1,0 +1,20 @@
+.ola-tagbutton{
+    background-color: #1a181b;
+    outline: none;
+    border:none;
+    border-radius: 0;
+    height:32px;
+
+    font-family: NotoSansDisplay;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #ffffff;
+
+    &:active {
+        background-color: $BaseMedium;
+    }
+}

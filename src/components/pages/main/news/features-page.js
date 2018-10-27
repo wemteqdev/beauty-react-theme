@@ -6,7 +6,7 @@ import assets from '../../../assets';
 class FeaturesPage extends React.Component{
     render(){
         return(
-            <div className = "features mb-5">
+            <div className = "features marginBottom-64">
                 <div className = "title">
                     Features
                 </div>
@@ -14,8 +14,8 @@ class FeaturesPage extends React.Component{
                     We always strive to provide you with an innovative experience
                 </div>
                 <div className = "row">
-                    <div className = "col-sm-12 col-md-12 mb-5 code-blog">
-                        <div className = "mb-5" style = {{height:'304px', background:`url(${assets.testbanner})`}}/>
+                    <div className = "col-sm-12 col-md-12 marginBottom-64 code-blog">
+                        <div className = "marginBottom-64" style = {{height:'304px', background:`url(${assets.testbanner})`}}/>
                     </div>
                 </div>
                 <div className = "features-list row">

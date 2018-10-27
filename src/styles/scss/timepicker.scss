@@ -9,7 +9,8 @@ $timepicker-w:294px;
     
     .time-picker-trigger{
         display: block;
-        width:$timepicker-w;
+        // width:$timepicker-w;
+        width: 100% ;
         height:29px;
         margin-bottom: 3px;
         background-color: rgba(255, 255, 255, 0.4);
@@ -122,3 +123,22 @@ $timepicker-w:294px;
     }
 }
 
+.time-range {
+    .relation-link {
+        float: left ;
+        width: 12px ;
+        height: 92px;
+        margin-top: 52px ;
+        border: solid 2px rgba(26, 24, 27, 0.1);
+        border-right: none;
+    }
+    .time-block {
+        margin-left: 18px ;
+        width: 242px;
+        .time-picker-trigger {
+            padding-left: 0;
+            border: none ;
+            border-bottom: solid 1px rgba(26, 24, 27, 0.4);
+        }
+    }
+}

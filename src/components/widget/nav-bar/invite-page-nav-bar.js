@@ -6,7 +6,7 @@ import {
 import NavSearchBar from '../searchbox/nav-searchbar';
 
 
-class NewsPageNavBar extends React.Component {
+class InvitePageNavBar extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-white">
@@ -29,7 +29,10 @@ class NewsPageNavBar extends React.Component {
                         </ul>
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/news">News Listing <span className="sr-only">(current)</span></Link>
+                                <Link className="nav-link" to="/">List Your Business <span className="sr-only">(current)</span></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/becomepro">Become a Pro</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/mybooking">My Bookings</Link>
@@ -62,4 +65,4 @@ class NewsPageNavBar extends React.Component {
     }
 }
 
-export default NewsPageNavBar;
+export default InvitePageNavBar;

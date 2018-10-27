@@ -15,7 +15,7 @@ class ImageTitleDesMorelinkItem extends React.Component {
 
     render() {
 
-        const title = this.props.title;
+        const title = this.props.title.capitalize();
         // const asset = this.props.asset;
         // const readmore = this.props.readmore;
         const oriDes = this.props.description;
@@ -26,7 +26,7 @@ class ImageTitleDesMorelinkItem extends React.Component {
             <Card className={this.props.className} style={{border: 0}}>
                 <CardImg top width="100%" src={`${this.props.asset}`} alt="Card image cap" />
                 <CardBody className="px-0">
-                    <CardTitle>{title.capitalize()}</CardTitle>
+                    <CardTitle>{title}</CardTitle>
                     {/* <CardSubtitle>Card subtitle</CardSubtitle> */}
                     <CardText>
                         {oriDes}

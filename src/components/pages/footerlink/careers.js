@@ -4,7 +4,7 @@ import assets from '../../assets';
 class Careers extends Component {
     render(){
         return (
-            <div className = "footer-careers mb-5">
+            <div className = "footer-careers marginBottom-64">
                 <div className="row">
                     <div className = "col-lg-6 col-md-12">
                         <div className = "title">

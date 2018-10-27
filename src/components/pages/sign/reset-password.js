@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import assets from '../../assets';
 import OlaInput from "../../widget/ola-input";
 
+import {Link} from 'react-router-dom';
+
 class ResetPasswordPage extends Component {
     handleCheckboxChange = () => {
     }
@@ -27,10 +29,10 @@ class ResetPasswordPage extends Component {
                         </div>
                     </div>
                     <div className="row marginTop-44 link-block d-flex justify-content-between">
-                        <div className="back-to-sign-in d-flex align-items-center">
+                        <Link to="/signin" className="back-to-sign-in d-flex align-items-center">
                             <img alt="..." src={assets.left_arrow_medium_black} className="mr-2"/>
                             Back to Sign In
-                        </div>
+                        </Link>
                         <button className = "btn ola-btn-primary m-btn">Send Reset Link</button>
                     </div>
                 </div>

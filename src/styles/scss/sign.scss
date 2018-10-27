@@ -130,6 +130,33 @@
         }
     }
 
+    &.choose-friends-page {
+        margin: 0 auto 275px;
+        padding: 88px 44px 24px;
+        width: 560px;
+        border: solid 1px rgba(26, 24, 27, 0.1);
+        background-color: #ffffff;
+        position: relative ;
+
+        .search-img {
+            margin-left: 0px ;
+        }
+
+        .friends-list {
+            height: 370px ;
+        }
+    }
+
+}
+
+.choose-friend-page-layout {
+    padding-top: 200px ;
+    height: 382px;
+    // background-image: linear-gradient(130deg, #2ec4b6, #288690);
+}
+
+.disabled {
+    color: rgba(26, 24, 27, 0.4);
 }
 
 .more-options-block {
@@ -144,4 +171,8 @@
     line-height: normal;
     letter-spacing: normal;
     color: #ff4365;
+}
+
+.marginTop-50 {
+    margin-top: 50px ;
 }

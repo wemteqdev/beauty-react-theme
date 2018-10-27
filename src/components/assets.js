@@ -53,6 +53,7 @@ import home from '../assets/images/icons/home.svg';
 
 import checked from '../assets/images/icons/checkbox-checked.svg';
 import unchecked from '../assets/images/icons/checkbox-unchecked.svg';
+import unchecked_disabled from '../assets/images/icons/checkbox-unchecked-disabled.svg';
 import calendar_s from '../assets/images/icons/calendar-s-80.svg';
 import clock_m from '../assets/images/icons/clock-m.svg';
 import action_X_white from '../assets/images/icons/action-x-white.svg';
@@ -88,6 +89,7 @@ import storyLL_2 from '../assets/images/story/story-ll-2.jpg';
 import storyLL_3 from '../assets/images/story/story-ll-3.jpg';
 
 import action_X_black_s from '../assets/images/icons/action-x-s.svg';
+import action_x from '../assets/images/icons/action-x.svg';
 import shopping_cart_white from '../assets/images/icons/icons-8-shopping-cart-white.svg';
 import shopping_cart_black from '../assets/images/icons/cart.svg';
 import message_group_white from '../assets/images/icons/icons-8-message-group-white.svg';
@@ -109,6 +111,12 @@ import arrowright        from '../assets/images/arrow/arrow-right-medium-black.s
 
 import user           from '../assets/images/icons/user.svg';
 import current_location           from '../assets/images/icons/current-location.svg';
+
+
+import select_dropdown_icon_black from '../assets/images/arrow/dropdown-arrow-medium-80.svg';
+
+import gmail_icon from '../assets/images/gmail-icon.png';
+import outlook_icon from '../assets/images/outlook-icon.png';
 
 export default {
     logo,
@@ -153,6 +161,7 @@ export default {
     home,
     checked,
     unchecked,
+    unchecked_disabled, 
     calendar_s,
     clock_m,
     action_X_white,
@@ -174,6 +183,7 @@ export default {
     storyLL_2,
     storyLL_3,
     action_X_black_s,
+    action_x, 
     shopping_cart_white,
     shopping_cart_black,
     dropdown_filled_white,
@@ -195,5 +205,9 @@ export default {
     arrowright, 
     user, 
     current_location, 
+    select_dropdown_icon_black, 
+
+    gmail_icon,
+    outlook_icon,
 
 }

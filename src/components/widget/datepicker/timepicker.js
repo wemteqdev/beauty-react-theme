@@ -76,7 +76,7 @@ class TimePicker extends React.Component {
         super(props);
         this.state = {
             visible: false,
-            time:null
+            time: props.time
         }
         this.onChangeTime = this.onChangeTime.bind(this);
         this.handleOutClickTimePicker = this.handleOutClickTimePicker.bind(this);

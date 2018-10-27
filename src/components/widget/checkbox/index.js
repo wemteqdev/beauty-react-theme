@@ -34,12 +34,23 @@ class Checkbox extends Component {
         const { label, groups } = this.props;
         const isChecked =  (groups.indexOf(label) >= 0);
 
-        return (
-            <div className="checkbox" onClick = {this.toggleCheckboxChange}>
-                <img alt="..." src = {(isChecked)?assets.checked:assets.unchecked} />
-                <div className = 'label'>{label}</div>
-            </div>
-        );
+        let disabled = this.props.disabled;
+
+        if (!disabled) {
+            return (
+                <div className="checkbox" onClick = {this.toggleCheckboxChange}>
+                    <img alt="..." src = {(isChecked)?assets.checked:assets.unchecked} />
+                    <div className = 'label'>{label}</div>
+                </div>
+            );
+        } else {
+            return (
+                <div className="checkbox">
+                    <img alt="..." src = {assets.unchecked_disabled} />
+                    <div className = 'label disabled'>{label}</div>
+                </div>
+            );
+        }
     }
 }
 

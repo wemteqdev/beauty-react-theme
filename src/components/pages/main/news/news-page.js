@@ -81,7 +81,7 @@ class NewsPage extends React.Component{
                     of millions.
                     </div>
 
-                    <div className = "row mb-5 review-block">
+                    <div className = "row marginBottom-64 review-block">
                         <div className = "review-header col-12 d-flex justify-content-between">
                             <div className = "title">Reviews</div>
                             <span className = "filter-icon">

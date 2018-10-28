@@ -89,8 +89,8 @@ class SignupPage extends Component {
                         <button className = "btn ola-btn-primary m-btn full-w-btn">Sign Up Now</button>
                     </div>
                     <div className = "marginTop-24 d-flex justify-content-center">
-                        Already have an Olafic account?
-                        <Link to="/signin" className="ola-link ml-2">Sign In</Link>
+                        <span className="mr-2">Already have an Olafic account?</span>
+                        <a className="ola-link" href="" data-toggle="modal" data-target="#signinModal">Sign In</a>
                     </div>
                 </div>
             </Modal>

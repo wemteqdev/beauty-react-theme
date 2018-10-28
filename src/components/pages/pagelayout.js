@@ -16,6 +16,7 @@ import InvitePageHeader from '../header/invite-page-header';
 
 import Footer from '../footer';
 import FooterFooter from '../footer/footer-footer';
+import SignupFooter from '../footer/signup-footer';
 
 import Home from './listyourbusiness';
 import BecomePro from './becomepro';
@@ -185,14 +186,23 @@ const ChooseFriendsPageLayout = ({component: Component, ...rest}) => {
 };
 
 const SignupStepPageLayout = ({component: Component, ...rest}) => {
+  if (rest.cur_step < rest.total_step) {
+    rest.step_type = "notlast";
+  } else if (rest.cur_step === rest.total_step) {
+    rest.step_type = "last";
+  }
   return (
     <Route {...rest} render={matchProps => (
       <div>
         <div className={containerClassName}>
-          <SignupStepHeader {...rest} title={rest.title}/>
+          <SignupStepHeader {...rest}/>
           <Component {...matchProps} />
         </div>
-        <FooterFooter/>
+        { !isMobile ?
+          <FooterFooter/>
+        :
+          <SignupFooter {...rest}/>
+        }
       </div>
     )} />
   )

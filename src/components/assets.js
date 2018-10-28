@@ -118,6 +118,8 @@ import select_dropdown_icon_black from '../assets/images/arrow/dropdown-arrow-me
 import gmail_icon from '../assets/images/gmail-icon.png';
 import outlook_icon from '../assets/images/outlook-icon.png';
 
+import back from '../assets/images/icons/back.svg';
+
 export default {
     logo,
     logoWhite,
@@ -209,5 +211,6 @@ export default {
 
     gmail_icon,
     outlook_icon,
+    back, 
 
 }

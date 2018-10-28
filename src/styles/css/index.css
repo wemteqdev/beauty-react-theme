@@ -2099,6 +2099,25 @@ body {
   text-align: right;
 }
 
+.signup-footer-container .Progress-Bar {
+  height: 4px;
+}
+.signup-footer-container .signup-footer {
+  margin-top: 4px;
+  width: 100%;
+  height: 64px;
+}
+.signup-footer-container .signup-footer .step-title {
+  font-family: NotoSansDisplay;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: rgba(26, 24, 27, 0.4);
+}
+
 div.ardp-date-picker * {
   box-sizing: border-box;
 }
@@ -5428,31 +5447,6 @@ div.ardp-date-picker .date-picker-trigger:active {
   padding-right: 120px;
   box-sizing: border-box;
 }
-.signup-step-header .marginTop-3 {
-  margin-top: 3px;
-}
-.signup-step-header .Progress-Bar {
-  height: 3px;
-  background-color: #2ec4b6;
-}
-.signup-step-header .Progress-Bar.Percent-15 {
-  width: 15%;
-}
-.signup-step-header .Progress-Bar.Percent-30 {
-  width: 30%;
-}
-.signup-step-header .Progress-Bar.Percent-33 {
-  width: 33%;
-}
-.signup-step-header .Progress-Bar.Percent-62 {
-  width: 62%;
-}
-.signup-step-header .Progress-Bar.Percent-66 {
-  width: 66%;
-}
-.signup-step-header .Progress-Bar.Percent-100 {
-  width: 100%;
-}
 .signup-step-header .navbar .nav-link {
   width: 26px;
   height: 26px;
@@ -5496,6 +5490,33 @@ div.ardp-date-picker .date-picker-trigger:active {
   display: inline-flex;
 }
 
+.marginTop-3 {
+  margin-top: 3px;
+}
+
+.Progress-Bar {
+  height: 3px;
+  background-color: #2ec4b6;
+}
+.Progress-Bar.Percent-15 {
+  width: 15%;
+}
+.Progress-Bar.Percent-30 {
+  width: 30%;
+}
+.Progress-Bar.Percent-33 {
+  width: 33%;
+}
+.Progress-Bar.Percent-62 {
+  width: 62%;
+}
+.Progress-Bar.Percent-66 {
+  width: 66%;
+}
+.Progress-Bar.Percent-100 {
+  width: 100%;
+}
+
 .signup {
   margin-top: 61px;
   width: 100%;
@@ -5523,7 +5544,6 @@ div.ardp-date-picker .date-picker-trigger:active {
   color: #1a181b;
 }
 .signup .content-block .step-number {
-  width: 36px;
   height: 14px;
   font-family: NotoSansDisplay;
   font-size: 12px;

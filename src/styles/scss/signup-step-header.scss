@@ -5,32 +5,6 @@
     padding-right:120px;
     box-sizing: border-box;
     // width:1280px;
-    .marginTop-3 {
-        margin-top: 3px ;
-    }
-    .Progress-Bar {
-        height: 3px;
-        background-color: #2ec4b6;
-        &.Percent-15 {
-            width: 15%;
-        }
-        &.Percent-30 {
-            width: 30%;
-        }
-        &.Percent-33 {
-            width: 33%;
-        }
-        &.Percent-62 {
-            width: 62%;
-        }
-        &.Percent-66 {
-            width: 66%;
-        }
-        &.Percent-100 {
-            width: 100%;
-        }
-    }
-
     .navbar {
         .nav-link {
             width: 26px;
@@ -85,5 +59,31 @@
 
     .menu-bar{
         display: inline-flex;
+    }
+}
+
+.marginTop-3 {
+    margin-top: 3px ;
+}
+.Progress-Bar {
+    height: 3px;
+    background-color: #2ec4b6;
+    &.Percent-15 {
+        width: 15%;
+    }
+    &.Percent-30 {
+        width: 30%;
+    }
+    &.Percent-33 {
+        width: 33%;
+    }
+    &.Percent-62 {
+        width: 62%;
+    }
+    &.Percent-66 {
+        width: 66%;
+    }
+    &.Percent-100 {
+        width: 100%;
     }
 }

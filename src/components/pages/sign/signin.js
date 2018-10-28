@@ -52,7 +52,7 @@ class SigninPage extends Component {
                         </div>
                         <div className = "marginTop-24 d-flex justify-content-center">
                             <span className="mr-2">Don’t have an Olafic account?</span>
-                            <a className="ola-link" href="" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+                            <a className="ola-link" href="" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
                         </div>
                     </div>
                 </div>

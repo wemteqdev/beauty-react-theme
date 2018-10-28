@@ -20,7 +20,7 @@ class SingnUpBanner extends React.Component {
                     <div className = "banner-container signup-banner" style = {style}>
                         <div className = "center-form">
                             <div className = "sign-up-des">{text}</div>
-                            <button type="button" className="btn ola-btn-primary signup-banner-btn">{buttonTitle}</button>     
+                            <button type="button" className="btn ola-btn-primary signup-banner-btn" data-toggle="modal" data-target="#signupModal">{buttonTitle}</button>     
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ class SingnUpBanner extends React.Component {
                 <div>
                     <div className = "banner-container signup-banner d-flex flex-column" style = {style}>
                         <div className = "sign-up-des mb-auto text-center">{text}</div>
-                        <button type="button" className="btn ola-btn-primary signup-banner-btn w-100">{buttonTitle}</button>     
+                        <button type="button" className="btn ola-btn-primary signup-banner-btn w-100" data-toggle="modal" data-target="#signupModal">{buttonTitle}</button>
                     </div>
                 </div>
             );

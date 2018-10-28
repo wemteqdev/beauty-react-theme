@@ -4,7 +4,7 @@ import assets from '../../../../assets';
 import CheckBox from '../../../../widget/checkbox';
 import TimeRange from '../../../../widget/datepicker/time-range';
 
-class ProSignupStep3 extends Component {
+class BusinessSignupStep4 extends Component {
     render(){
         let tm = {
             hour:'12',
@@ -76,4 +76,4 @@ class ProSignupStep3 extends Component {
     handleCheckboxChange = () => {
     }
 }
-export default ProSignupStep3;
+export default BusinessSignupStep4;

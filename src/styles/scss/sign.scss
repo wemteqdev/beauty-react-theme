@@ -14,13 +14,16 @@
     margin-top: 24px ;
 }
 
+.close {
+    float: left !important;
+    margin: -1rem auto -1rem -1rem !important;
+    // padding: 10px 15px 0 0 !important;
+}
 
 .sign-page {
-    margin: 200px auto 181px;
-    padding: 88px ;
-    padding-bottom: 44px ;
-    width: 488px;
-    border: solid 1px rgba(26, 24, 27, 0.1);
+    // max-width: 488px;
+    // border: solid 1px rgba(26, 24, 27, 0.1);
+    padding: 44px 88px ;
     background-color: #ffffff;
     position: relative ;
 
@@ -31,26 +34,39 @@
     line-height: normal;
     letter-spacing: normal;
 
+    button {
+        overflow: hidden;
+    }
+
     .text-small {
         font-size: 13px;
     }
 
-    .close {
-        position: absolute ;
-        top: 10px ;
-        left: 15px ;
-    }
-
-    .separate-bar {
-        width: 136px;
-        height: 1px;
-        background-color: rgba(26, 24, 27, 0.05) ;
-    }
-    .or {
-        margin: 0 11px ;
-        font-family: NotoSansDisplay;
-        line-height: 1.4;
-        color: rgba(26, 24, 27, 0.4);
+    .separator {
+        overflow: hidden ;
+        span {
+            position: relative ;
+            padding: 0 11px ;
+            font-family: NotoSansDisplay;
+            line-height: 1.4;
+            color: rgba(26, 24, 27, 0.4);
+            &::before {
+                content: "" !important;
+                position: absolute !important;
+                top: 50% !important;
+                right: 100% !important;
+                width: 5000px !important;
+                border-bottom: 1px solid rgba(26, 24, 27, 0.05) !important;
+            }
+            &::after {
+                content: "" !important;
+                position: absolute !important;
+                top: 50% !important;
+                left: 100% !important;
+                width: 5000px !important;
+                border-bottom: 1px solid rgba(26, 24, 27, 0.05) !important;
+            }
+        }
     }
     .caption {
         color: rgba(26, 24, 27, 0.8);

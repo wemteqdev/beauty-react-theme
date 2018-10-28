@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
+import SigninPage from '../pages/sign/signin';
+import SignupPage from '../pages/sign/signup';
+
 class FooterFooter extends Component {
     render() {
         return (
@@ -11,6 +14,8 @@ class FooterFooter extends Component {
                         <Link to = "/terms" className  ="font-black">Privacy :: Terms</Link>
                     </div>
                 </div>
+                <SigninPage/>
+                <SignupPage/>
             </div>
         );
     }

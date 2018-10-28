@@ -5268,12 +5268,13 @@ div.ardp-date-picker .date-picker-trigger:active {
   margin-top: 24px;
 }
 
+.close {
+  float: left !important;
+  margin: -1rem auto -1rem -1rem !important;
+}
+
 .sign-page {
-  margin: 200px auto 181px;
-  padding: 88px;
-  padding-bottom: 44px;
-  width: 488px;
-  border: solid 1px rgba(26, 24, 27, 0.1);
+  padding: 44px 88px;
   background-color: #ffffff;
   position: relative;
   font-size: 15px;
@@ -5283,24 +5284,37 @@ div.ardp-date-picker .date-picker-trigger:active {
   line-height: normal;
   letter-spacing: normal;
 }
+.sign-page button {
+  overflow: hidden;
+}
 .sign-page .text-small {
   font-size: 13px;
 }
-.sign-page .close {
-  position: absolute;
-  top: 10px;
-  left: 15px;
+.sign-page .separator {
+  overflow: hidden;
 }
-.sign-page .separate-bar {
-  width: 136px;
-  height: 1px;
-  background-color: rgba(26, 24, 27, 0.05);
-}
-.sign-page .or {
-  margin: 0 11px;
+.sign-page .separator span {
+  position: relative;
+  padding: 0 11px;
   font-family: NotoSansDisplay;
   line-height: 1.4;
   color: rgba(26, 24, 27, 0.4);
+}
+.sign-page .separator span::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 100% !important;
+  width: 5000px !important;
+  border-bottom: 1px solid rgba(26, 24, 27, 0.05) !important;
+}
+.sign-page .separator span::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 100% !important;
+  width: 5000px !important;
+  border-bottom: 1px solid rgba(26, 24, 27, 0.05) !important;
 }
 .sign-page .caption {
   color: rgba(26, 24, 27, 0.8);

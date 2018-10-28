@@ -199,17 +199,17 @@ const SignupStepPageLayout = ({component: Component, ...rest}) => {
 };
 
 class PageLayout extends Component {
-    componentDidMount(){
-        window.scrollTo(0, 0)
-    }
+  componentDidMount(){
+      window.scrollTo(0, 0)
+  }
 
-    componentDidUpdate(){
-        
-    }
+  componentDidUpdate(){
+      
+  }
   render() {
     return (
         <Router>
-          <div>
+            <div>
                 <DefaultLayout exact path="/" component={Home}/>
                 <DefaultLayout exact path="/becomepro" component={BecomePro}/>
                 <DefaultLayout exact path="/search" component={SearchResult}/>
@@ -277,7 +277,7 @@ class PageLayout extends Component {
                 <InvitePageLayout exact path="/invite-friends" component={InvitePage} who={"friends"}/>
                 <InvitePageLayout exact path="/invite-clients" component={InvitePage} who={"clients"}/>
                 <ChooseFriendsPageLayout exact path="/choose-friends" component={ChooseFriendsPage}/>
-          </div>
+            </div>
         </Router>
     );
   }

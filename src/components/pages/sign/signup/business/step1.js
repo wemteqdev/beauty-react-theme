@@ -4,6 +4,8 @@ import assets from '../../../../assets';
 import OlaSelect from '../../../../widget/ola-select';
 import OlaInput from '../../../../widget/ola-input';
 
+import {isMobile} from 'react-device-detect';
+
 class BusinessSignupStep1 extends Component {
     render(){
         return (
@@ -12,20 +14,23 @@ class BusinessSignupStep1 extends Component {
                     <div className = "col-lg-8 col-md-12">
                         <div className="content-block">
                             <div className = "title">
-                                Let’s Get Started Listing <br/>
+                                Let’s Get Started Listing 
                                 Your Business
                             </div>
-                            <div className = "step-number">
-                                STEP 1
-                            </div>
-
-                            <div className = "row marginTop-8">
-                                <div className = "col-12 subtitle">
-                                    What kind of business do you have?
+                        { !isMobile &&
+                            <div>
+                                <div className = "step-number">
+                                    STEP 1
+                                </div>
+                                <div className = "row marginTop-8">
+                                    <div className = "col-12 subtitle">
+                                        What kind of business do you have?
+                                    </div>
                                 </div>
                             </div>
+                        }
                             <div className = "row">
-                                <div className = "col-6">
+                                <div className = "col-md-6 col-sm-12">
                                     <div className="row marginTop-32">
                                         <div className = "col-12 Control-header">
                                             Business Name *
@@ -52,11 +57,14 @@ class BusinessSignupStep1 extends Component {
                                     </div>
                                 </div>
                             </div>
+                        { !isMobile &&
                             <div className = "marginTop-44 btn-continue-block">
                                 <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
                             </div>
+                        }
                         </div>
                     </div>
+                { !isMobile &&
                     <div className="col-lg-4 col-md-12 px-lg-2">
                         <div className = "comment-block marginTop-64">
                             <div>
@@ -67,6 +75,7 @@ class BusinessSignupStep1 extends Component {
                             </div>
                         </div>
                     </div>
+                }
                 </div>
             </div>
         );

@@ -127,6 +127,4 @@ class TimePicker extends React.Component {
 
 }
 
-
-
 export default TimePicker;

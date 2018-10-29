@@ -346,6 +346,7 @@ class DatePicker extends React.Component{
     }
 
     onSelect(day) {
+        console.log(day)
         this.setState({ selected: day });
         this.props.onSelect(day);
         this.hide();

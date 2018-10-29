@@ -3,16 +3,18 @@ import assets from '../../../assets';
 
 import OlaInput from "../../../widget/ola-input";
 
+import {isMobile} from 'react-device-detect';
+
 class InvitePage extends Component {
 
     onChangePage = (selected) => {
     }
 
-    render(){
+    renderWebPage = () => {
         const who = this.props.who.capitalize();
 
         return (
-            <div className = "invite-page">
+            <div className = "invite-page marginBottom-64">
                 <div className= "header text-center">
                     <img alt="..." src={assets.storyP_1} className = "photo marginTop-44"/>
                     <div className="title marginTop-20">
@@ -50,10 +52,44 @@ class InvitePage extends Component {
                     </div>
                 </div>
                 <div className = "text-center marginTop-44">
-                    <button className = "btn ola-btn ola-btn-bordered s-btn">Invite Your {who} Later</button>
+                    <button className = "btn ola-btn ola-btn-bordered s-btn" data-toggle="modal" data-target="#choosefriendsModal">Invite Your {who} Later</button>
                 </div>
             </div>
         );
+    }
+
+    renderMobilePage = () => {
+        return (
+            <div className = "invite-page marginBottom-64">
+                <div className="title">
+                    Import Contacts
+                </div>
+                <div className = "marginTop-44">
+                    Email Address
+                </div>
+                <div className="marginTop-12">
+                    <OlaInput type = "text" placeholder = "Type Here..." className="w-100"/>
+                </div>
+                <div className="marginTop-24">
+                    <button className = "btn ola-btn ola-btn-bordered s-btn w-100">Send Invite</button>
+                </div>
+                <button className = "marginTop-140 btn ola-btn-facebook w-100 text-white">
+                    <img alt="..." src={assets.outlook_icon} className="text-white mr-2"/> Import from Outlook
+                </button>
+                <button className = "marginTop-12 btn ola-btn-google w-100">
+                    <img alt="..." src={assets.gmail_icon} className="mr-2"/> Import from Gmail
+                </button>
+            </div>
+        );
+    }
+
+    render(){
+        if (!isMobile) {
+            return this.renderWebPage()
+        } else {
+            return this.renderMobilePage()
+        }
+
     }
 }
 export default InvitePage;

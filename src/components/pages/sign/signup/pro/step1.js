@@ -4,6 +4,8 @@ import assets from '../../../../assets';
 import OlaSelect from '../../../../widget/ola-select';
 import OlaInput from '../../../../widget/ola-input';
 
+import {isMobile} from 'react-device-detect';
+
 class ProSignupStep1 extends Component {
     render(){
         return (
@@ -15,17 +17,20 @@ class ProSignupStep1 extends Component {
                                 <div className = "title">
                                     Services and Description
                                 </div>
-                                <div className = "step-number">
-                                    STEP 1
-                                </div>
-
-                                <div className = "row marginTop-8">
-                                    <div className = "col-12 subtitle">
-                                        Can you tell us more about yourself?
+                            { !isMobile &&
+                                <div>
+                                    <div className = "step-number">
+                                        STEP 1
+                                    </div>
+                                    <div className = "row marginTop-8">
+                                        <div className = "col-12 subtitle">
+                                            Can you tell us more about yourself?
+                                        </div>
                                     </div>
                                 </div>
+                            }
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-32">
                                             <div className = "col-12 Control-header">
                                                 Intro
@@ -61,7 +66,7 @@ class ProSignupStep1 extends Component {
                                     </div>
                                 </div>
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-24">
                                             <div className = "col-12 Control-header">
                                                 First Language
@@ -81,7 +86,7 @@ class ProSignupStep1 extends Component {
                                     </div>
                                 </div>
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-32">
                                             <div className = "col-12 Control-header">
                                                 Licenses
@@ -93,7 +98,7 @@ class ProSignupStep1 extends Component {
                                     </div>
                                 </div>
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-32">
                                             <div className = "col-12 Control-header">
                                                 Licenses
@@ -113,7 +118,7 @@ class ProSignupStep1 extends Component {
                                     </div>
                                 </div>
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-24">
                                             <div className = "col-12 Control-header">
                                                 Areas Serving
@@ -125,7 +130,7 @@ class ProSignupStep1 extends Component {
                                     </div>
                                 </div>
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-32">
                                             <div className = "col-12 Control-header">
                                                 Areas Serving
@@ -145,7 +150,7 @@ class ProSignupStep1 extends Component {
                                     </div>
                                 </div>
                                 <div className = "row">
-                                    <div className = "col-6">
+                                    <div className = "col-md-6 col-sm-12">
                                         <div className="row marginTop-24">
                                             <div className = "col-12 Control-header">
                                                 Business Name
@@ -208,11 +213,14 @@ class ProSignupStep1 extends Component {
                                         </div>
                                     </div>
                                 </div>
+                            { !isMobile &&
                                 <div className = "marginTop-44 btn-continue-block">
                                     <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
                                 </div>
+                            }
                             </div>
                         </div>
+                    { !isMobile &&
                         <div className="col-lg-4 col-md-12 px-lg-2">
                             <div className = "comment-block marginTop-64">
                                 <div>
@@ -239,6 +247,7 @@ class ProSignupStep1 extends Component {
                                 </div>
                             </div>
                         </div>
+                    }
                     </div>
                 </div>
             </div>

@@ -4,6 +4,8 @@ import assets from '../../../../assets';
 import CheckBox from '../../../../widget/checkbox';
 import TimeRange from '../../../../widget/datepicker/time-range';
 
+import {isMobile} from 'react-device-detect';
+
 class ProSignupStep3 extends Component {
     render(){
         let tm = {
@@ -19,12 +21,16 @@ class ProSignupStep3 extends Component {
                                 <div className = "title">
                                     When do you operate?
                                 </div>
-                                <div className = "step-number">
-                                    STEP 3
+                            { !isMobile &&
+                                <div>
+                                    <div className = "step-number">
+                                        STEP 3
+                                    </div>
+                                    <div className = "marginTop-8 subtitle">
+                                        Tell us when do you work
+                                    </div>
                                 </div>
-                                <div className = "marginTop-8 subtitle">
-                                    Tell us when do you work
-                                </div>
+                            }
                                 <div className = "d-flex flex-wrap week marginTop-24">
                                     <div className = "weekday marginBottom-14">
                                         <CheckBox label = "Monday" handleCheckboxChange = {this.handleCheckboxChange} groups = {[]}/>
@@ -51,11 +57,14 @@ class ProSignupStep3 extends Component {
                                 <div className = "marginTop-50">
                                     <TimeRange time_from={tm} time_to={tm}/>
                                 </div>
+                            { !isMobile &&
                                 <div className = "marginTop-44 btn-finish-block">
                                     <button className = "btn ola-btn-primary m-btn w-100">Finish Registration</button>
                                 </div>
+                            }
                             </div>
                         </div>
+                    { !isMobile &&
                         <div className="col-lg-4 col-md-12 px-lg-1">
                             <div className = "comment-block marginTop-64">
                                 <div>
@@ -67,6 +76,7 @@ class ProSignupStep3 extends Component {
                                 </div>
                             </div>
                         </div>
+                    }
                     </div>
                 </div>
             </div>

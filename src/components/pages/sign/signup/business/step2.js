@@ -5,6 +5,8 @@ import OlaInput from '../../../../widget/ola-input';
 import CheckBox from '../../../../widget/checkbox';
 import OlaTabButton from '../../../../widget/ola-tagbutton';
 
+import {isMobile} from 'react-device-detect';
+
 class BusinessSignupStep2 extends Component {
     render(){
         return (
@@ -15,13 +17,16 @@ class BusinessSignupStep2 extends Component {
                             <div className = "title">
                                 Business Contact and Description
                             </div>
-                            <div className = "step-number">
-                                STEP 2
+                        { !isMobile &&
+                            <div>
+                                <div className = "step-number">
+                                    STEP 2
+                                </div>
+                                <div className = "subtitle marginTop-8">
+                                    Can you tell us more about your business?
+                                </div>
                             </div>
-
-                            <div className = "subtitle marginTop-8">
-                                Can you tell us more about your business?
-                            </div>
+                        }
                             <div className = "row">
                                 <div className = "col-6">
                                     <div className="row marginTop-32">
@@ -57,7 +62,7 @@ class BusinessSignupStep2 extends Component {
                                 Business Details
                             </div>
                             <div className = "row">
-                                <div className = "col-6">
+                                <div className = "col-md-6 col-sm-12">
                                     <div className="row marginTop-24">
                                         <div className = "col-12 Control-header">
                                             Business Intro
@@ -77,7 +82,7 @@ class BusinessSignupStep2 extends Component {
                                 </div>
                             </div>
                             <div className = "row marginTop-24">
-                                <div className = "col-8 d-flex flex-wrap">
+                                <div className = "col-md-8 col-sm-12 d-flex flex-wrap">
                                     <OlaTabButton label="SPA" className="marginTop-8 marginRight-12"/>
                                     <OlaTabButton label="SAUNA" className="marginTop-8 marginRight-12"/>
                                     <OlaTabButton label="SPA" className="marginTop-8 marginRight-12"/>
@@ -86,14 +91,16 @@ class BusinessSignupStep2 extends Component {
                                     <OlaTabButton label="SPA" className="marginTop-8 marginRight-12"/>
                                     <OlaTabButton label="SAUNA" className="marginTop-8 marginRight-12"/>
                                     <OlaTabButton label="SPA" className="marginTop-8 marginRight-12"/>
-                                    <OlaTabButton label="SAUNA" className="marginTop-8 marginRight-12"/>
                                 </div>
                             </div>
+                        { !isMobile &&
                             <div className = "marginTop-44 btn-continue-block">
                                 <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
                             </div>
+                        }
                         </div>
                     </div>
+                { !isMobile &&
                     <div className="col-lg-4 col-md-12 px-lg-1">
                         <div className = "comment-block marginTop-64">
                             <div>
@@ -104,6 +111,7 @@ class BusinessSignupStep2 extends Component {
                             </div>
                         </div>
                     </div>
+                }
                 </div>
             </div>
         );

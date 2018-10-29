@@ -60,6 +60,18 @@
     .menu-bar{
         display: inline-flex;
     }
+
+    a {
+        font-family: NotoSansDisplay;
+        font-size: 13px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #1a181b;
+    }
 }
 
 .marginTop-3 {

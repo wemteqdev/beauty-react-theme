@@ -1,4 +1,5 @@
 import logo             from '../assets/images/logo-logo-color-symbol-0-x.png';
+// import * as logo             from 'http://eleggs.de/wp-content/uploads/2014/12/fullplanche1.jpg';
 import logoWhite        from '../assets/images/logo-logo-white-symbol-0-x.svg';
 import arrowdown        from '../assets/images/arrow/dropdown-arrow-medium-black.svg';
 import olafic           from '../assets/images/ola-fic.svg';

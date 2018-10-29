@@ -6,6 +6,8 @@ import OlaInput from '../../../../widget/ola-input';
 import CheckBox from '../../../../widget/checkbox';
 import GoogleMapReact from 'google-map-react';
 
+import {isMobile} from 'react-device-detect';
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class ProSignupStep2 extends Component {
@@ -29,17 +31,20 @@ class ProSignupStep2 extends Component {
                                 <div className = "title">
                                     Your Location
                                 </div>
-                                <div className = "step-number">
-                                    STEP 2
-                                </div>
-
-                                <div className = "row marginTop-8">
-                                    <div className = "col-12 subtitle">
-                                        From where does your business operate?
+                            { !isMobile &&
+                                <div>
+                                    <div className = "step-number">
+                                        STEP 2
+                                    </div>
+                                    <div className = "row marginTop-8">
+                                        <div className = "col-12 subtitle">
+                                            From where does your business operate?
+                                        </div>
                                     </div>
                                 </div>
+                            }
                                 <div className = "row d-flex align-items-end">
-                                    <div className = "col-6">
+                                    <div className = "col-sm-6 col-xs-12">
                                         <div className="row marginTop-32">
                                             <div className = "col-12 Control-header">
                                                 Country *
@@ -87,7 +92,7 @@ class ProSignupStep2 extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className = "col-6 google-map pr-5">
+                                    <div className = "col-sm-6 col-xs-12 pr-md-5 marginTop-44 google-map">
                                         <GoogleMapReact
                                             // options = {this.mapOptionsCreator}
                                             bootstrapURLKeys={{ key: 'AIzaSyD5NfkcVgbxns5Q_LAFklg3ATMbF_fOR9g' }}
@@ -102,16 +107,21 @@ class ProSignupStep2 extends Component {
                                         </GoogleMapReact>
                                     </div>
                                 </div>
-                                <div className="row marginTop-32">
-                                    <div className = "col-12 Control-header">
-                                        <CheckBox label = "Keep address private?" handleCheckboxChange = {this.handleCheckboxChange} groups = {[]}/>
+                            { !isMobile &&
+                                <div>
+                                    <div className="row marginTop-32">
+                                        <div className = "col-12 Control-header">
+                                            <CheckBox label = "Keep address private?" handleCheckboxChange = {this.handleCheckboxChange} groups = {[]}/>
+                                        </div>
+                                    </div>
+                                    <div className = "marginTop-44 btn-continue-block">
+                                        <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
                                     </div>
                                 </div>
-                                <div className = "marginTop-44 btn-continue-block">
-                                    <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
-                                </div>
+                            }
                             </div>
                         </div>
+                    { !isMobile &&
                         <div className="col-lg-4 col-md-12 px-lg-2">
                             <div className = "comment-block marginTop-64">
                                 <div>
@@ -123,6 +133,7 @@ class ProSignupStep2 extends Component {
                                 </div>
                             </div>
                         </div>
+                    }
                     </div>
                 </div>
             </div>

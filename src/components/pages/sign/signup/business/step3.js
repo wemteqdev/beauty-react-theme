@@ -5,6 +5,8 @@ import OlaSelect from '../../../../widget/ola-select';
 import OlaInput from '../../../../widget/ola-input';
 import GoogleMapReact from 'google-map-react';
 
+import {isMobile} from 'react-device-detect';
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class BusinessSignupStep3 extends Component {
@@ -27,17 +29,20 @@ class BusinessSignupStep3 extends Component {
                             <div className = "title">
                                 Business Location
                             </div>
-                            <div className = "step-number">
-                                STEP 3
-                            </div>
-
-                            <div className = "row marginTop-8">
-                                <div className = "col-12 subtitle">
-                                    From where does your business operate?
+                        { !isMobile &&
+                            <div>
+                                <div className = "step-number">
+                                    STEP 3
+                                </div>
+                                <div className = "row marginTop-8">
+                                    <div className = "col-12 subtitle">
+                                        From where does your business operate?
+                                    </div>
                                 </div>
                             </div>
+                        }
                             <div className = "row d-flex align-items-end">
-                                <div className = "col-6">
+                                <div className = "col-md-6 col-sm-12">
                                     <div className="row marginTop-32">
                                         <div className = "col-12 Control-header">
                                             Country *
@@ -85,7 +90,7 @@ class BusinessSignupStep3 extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className = "col-6 google-map pr-5">
+                                <div className = "col-md-6 col-sm-12 google-map pr-md-5">
                                     <GoogleMapReact
                                         // options = {this.mapOptionsCreator}
                                         bootstrapURLKeys={{ key: 'AIzaSyD5NfkcVgbxns5Q_LAFklg3ATMbF_fOR9g' }}
@@ -100,11 +105,14 @@ class BusinessSignupStep3 extends Component {
                                     </GoogleMapReact>
                                 </div>
                             </div>
+                        { !isMobile &&
                             <div className = "marginTop-44 btn-continue-block">
                                 <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
                             </div>
+                        }
                         </div>
                     </div>
+                { !isMobile &&
                     <div className="col-lg-4 col-md-12 px-lg-2">
                         <div className = "comment-block marginTop-64">
                             <div>
@@ -116,6 +124,7 @@ class BusinessSignupStep3 extends Component {
                             </div>
                         </div>
                     </div>
+                }
                 </div>
             </div>
         );

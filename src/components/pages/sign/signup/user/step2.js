@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import assets from '../../../../assets';
 import OlaSelect from '../../../../widget/ola-select';
 
+import {isMobile} from 'react-device-detect';
+
 class UserSignupStep2 extends Component {
     constructor(props) {
         super(props);
@@ -20,20 +22,28 @@ class UserSignupStep2 extends Component {
                 <div className="row">
                     <div className = "col-lg-8 col-md-12">
                         <div className="content-block">
-                            <div className = "title">
-                                Let us customize your <br/>experience
-                            </div>
-                            <div className = "step-number">
-                                STEP 2
-                            </div>
+                        { !isMobile ?
+                            <div>
+                                <div className = "title">
+                                    Let us customize your <br/>experience
+                                </div>
+                                <div className = "step-number">
+                                    STEP 2
+                                </div>
 
-                            <div className = "row marginTop-8">
-                                <div className = "col-12 Where-do-you-live">
-                                    What kind of services do you like?
+                                <div className = "row marginTop-8">
+                                    <div className = "col-12 Where-do-you-live">
+                                        What kind of services do you like?
+                                    </div>
                                 </div>
                             </div>
+                        :
+                            <div className = "title">
+                                What kind of services do you like?
+                            </div>
+                        }
                             <div className = "row d-flex align-items-end">
-                                <div className = "col-6">
+                                <div className = "col-md-6 col-sm-12">
                                     <div className="row marginTop-32">
                                         <div className = "col-12 Control-header">
                                             Services
@@ -60,11 +70,14 @@ class UserSignupStep2 extends Component {
                                     </div>
                                 </div>
                             </div>
+                        { !isMobile &&
                             <div className = "marginTop-44 btn-continue-block">
                                 <button className = "btn ola-btn-primary m-btn w-100">Continue</button>
                             </div>
+                        }
                         </div>
                     </div>
+                { !isMobile &&
                     <div className="col-lg-4 col-md-12 px-lg-2">
                         <div className = "comment-block marginTop-64">
                             <div>
@@ -76,6 +89,7 @@ class UserSignupStep2 extends Component {
                             </div>
                         </div>
                     </div>
+                }
                 </div>
             </div>
         );

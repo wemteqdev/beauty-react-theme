@@ -52,7 +52,7 @@ class ProductDealsList extends React.Component {
             <CardItem colClass = {colClass} cardinfo = {item} key={index}/>
         ));
         return (
-            <div className="cardlist-container row">
+            <div className="cardlist-container row flex-nowrap">
                 {carditems}
             </div>
         )

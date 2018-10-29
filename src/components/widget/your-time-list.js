@@ -17,7 +17,7 @@ class YourTimeList extends React.Component {
         return (
             <div>
                 <div className = "list-title">Your Time Belongs To You.</div>
-                <div className="row">
+                <div className="row flex-nowrap">
                     <YourTimeListItem 
                         title="Business" 
                         asset = {assets.yourTI0} 

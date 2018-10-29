@@ -18,7 +18,7 @@ class BecomePartnerList extends React.Component {
         return (
             <div>
                 <div className = "list-title">Become a Partner</div>
-                <div className="row">
+                <div className="row flex-nowrap">
                     <YourTimeListItem 
                         title="List Your Business" 
                         asset = {assets.yourTI0} 

@@ -55,8 +55,12 @@ class CardList extends React.Component {
         const carditems =  arr.map((item,index) =>(
             <CardItem colClass = {colClass} cardinfo = {item} key={index}/>
         ));
+        let flex_nowrap = "";
+        if (isMobile) {
+            flex_nowrap = "flex-nowrap";
+        }
         return (
-            <div className="cardlist-container row flex-nowrap">
+            <div className={`cardlist-container row ${flex_nowrap}`}>
                 {carditems}
             </div>
         )

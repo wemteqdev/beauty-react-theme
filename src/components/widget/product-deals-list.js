@@ -51,12 +51,12 @@ class ProductDealsList extends React.Component {
         const carditems =  arr.map((item,index) =>(
             <CardItem colClass = {colClass} cardinfo = {item} key={index}/>
         ));
-        let flex_nowrap = "";
+        let scroll_x_container = "";
         if (isMobile) {
-            flex_nowrap = "flex-nowrap";
+            scroll_x_container = "flex-nowrap scroll-x";
         }
         return (
-            <div className={`cardlist-container row ${flex_nowrap}`}>
+            <div className={`cardlist-container row ${scroll_x_container}`}>
                 {carditems}
             </div>
         )

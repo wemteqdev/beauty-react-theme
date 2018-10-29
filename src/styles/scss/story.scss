@@ -136,3 +136,8 @@
 .images-scroll-area::-webkit-scrollbar-thumb {
   background-color: #2ec4b6;
 }
+
+.scroll-x{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

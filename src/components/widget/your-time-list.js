@@ -14,14 +14,14 @@ class YourTimeList extends React.Component {
         if (isMobile) {
             className = "your-time-list-item col-12";
         }
-        let flex_nowrap = "";
+        let scroll_x_container = "";
         if (isMobile) {
-            flex_nowrap = "flex-nowrap";
+            scroll_x_container = "flex-nowrap scroll-x";
         }
         return (
             <div>
                 <div className = "list-title">Your Time Belongs To You.</div>
-                <div className={`row ${flex_nowrap}`}>
+                <div className={`row ${scroll_x_container}`}>
                     <YourTimeListItem 
                         title="Business" 
                         asset = {assets.yourTI0} 

@@ -1841,8 +1841,8 @@ body {
   margin-left: 0px;
 }
 .card-container .friends-container .friend-picture:hover {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   z-index: 10;
 }
 .card-container .friends-container .friend-count {
@@ -3221,6 +3221,11 @@ div.ardp-date-picker .date-picker-trigger:active {
 
 .images-scroll-area::-webkit-scrollbar-thumb {
   background-color: #2ec4b6;
+}
+
+.scroll-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .code-conduct .code-conduct-block {

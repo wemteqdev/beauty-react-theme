@@ -24,7 +24,7 @@ import BecomePro from './becomepro';
 import SearchResult from './searchresult';
 
 import AboutUs from './footerlink/aboutus';
-import Advertiese from './footerlink/advertiese';
+import Advertise from './footerlink/advertise';
 import Blogs from './footerlink/blogs';
 import Careers from './footerlink/careers';
 import Claim from './footerlink/claim';
@@ -243,9 +243,9 @@ class PageLayout extends Component {
                 <DefaultLayout exact path="/categories" component={Categories}/>
                 <DefaultLayout exact path="/locations" component={Locations}/>
 
-                <DefaultLayout exact path="/advertiese" component={Advertiese}/>
-                <DefaultLayout exact path="/claim" component={Claim}/>
-                <DefaultLayout exact path="/support" component={BusinessSupport}/>
+                <DefaultLayout exact path="/advertise-on-olafic" component={Advertise}/>
+                <DefaultLayout exact path="/claim-business" component={Claim}/>
+                <DefaultLayout exact path="/business-support" component={BusinessSupport}/>
                 <DefaultLayout exact path="/successstory" component={SuccessStory}/>
                 <DefaultLayout exact path="/formembers" component={ForMembers}/>
                 <DefaultLayout exact path="/forpros" component={ForPros}/>
@@ -272,7 +272,7 @@ class PageLayout extends Component {
                 <MainPageLayout exact path="/media" component = {MediaAssetsPage}/>
 
                 <MainPageLayout exact path="/media-individual" component = {MediaAssetsIndividualPage}/>
-                <MainPageLayout exact path="/contact-us" component = {ContactPage}/>
+                <MainPageLayout exact path="/contact-support" component = {ContactPage}/>
                 <MainPageLayout exact path="/team" component = {TeamPage}/>
 
                 <DefaultLayout exact path="/stories" component = {Stories}/>

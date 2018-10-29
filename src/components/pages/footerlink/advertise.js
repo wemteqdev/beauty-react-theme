@@ -7,7 +7,7 @@ import SignUpBanner from '../../widget/signup-banner';
 import assets from '../../assets';
 
 
-class Advertiese extends Component {
+class Advertise extends Component {
     render(){
         return (
             <div className = "mt-5 py-4">
@@ -40,4 +40,4 @@ class Advertiese extends Component {
         );
     }
 }
-export default Advertiese;
+export default Advertise;

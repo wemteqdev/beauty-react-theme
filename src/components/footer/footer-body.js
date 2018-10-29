@@ -56,8 +56,8 @@ class FooterBody extends Component {
                         </div>
                         <ul className = "list-unstyled footer-list-conent">
                             <li><Link to = "/advertiese" className = "none-decoration">Advertise on Olafic</Link></li>
-                            <li><Link to = "/claim" className = "none-decoration">Claim Business</Link></li>
-                            <li><Link to = "/support" className = "none-decoration">Business Support</Link></li>
+                            <li><Link to = "claim-business" className = "none-decoration">Claim Business</Link></li>
+                            <li><Link to = "/business-support" className = "none-decoration">Business Support</Link></li>
                             <li><Link to = "/successstory" className = "none-decoration">Business Success Stories</Link></li>
                             <li><Link to = "/formembers" className = "none-decoration">For Members</Link></li>
                             <li><Link to = "/forpros" className = "none-decoration">For Pros</Link></li>
@@ -74,7 +74,7 @@ class FooterBody extends Component {
                         </div>
                         <ul className = "list-unstyled footer-list-conent">
                             <li>
-                                <Link to = "/contact-us" className = "none-decoration">
+                                <Link to = "/contact-support" className = "none-decoration">
                                     <Social name = "message" />
                                     Contact Support</Link></li>
                             <li>

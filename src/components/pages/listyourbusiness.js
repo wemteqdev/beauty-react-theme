@@ -33,9 +33,9 @@ class ListYourBusiness extends BasePage {
                     Our beauty pros come to your home, office or wherever your <br/> life takes you at salon’s prices
                 </div>
             </CommonBanner>
-            <CardList title = "Salons" moreLink = "/" moreLinkName = "Show all Saloons(2000)" category = 'business' keyword = 'salon'/>
+            <CardList title = "Salons" moreLink = "/" moreLinkName = "Show all Saloons (2000)" category = 'business' keyword = 'salon'/>
             <YourTimeList/>
-            <CardList title = "Beauty Pros" moreLink = "/" moreLinkName = "Show All Beauty Pros(2000)" category = 'professional' keyword = "beauty"/>
+            <CardList title = "Beauty Pros" moreLink = "/" moreLinkName = "Show All Beauty Pros (2000)" category = 'professional' keyword = "beauty"/>
             <CommonBanner   
                 title = "Are you a hair &amp; makeup professional?" 
                 background = {assets.homeservicehaire} buttonTitle = "Join our team">

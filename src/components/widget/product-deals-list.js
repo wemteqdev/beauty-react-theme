@@ -68,7 +68,7 @@ class ProductDealsList extends React.Component {
                 <div className = "list-title">{this.props.title}</div>
                 {this.renderItmes(this.state.carditmes)}
                 { 
-                    this.props.moreLink? (<Link className = "view-all-list-link" to = '/'>{this.props.moreLinkName} <Arrow dir = "right"/> </Link>):''    
+                    this.props.moreLink? (<Link className = "view-all-list-link mt-0" to = '/'>{this.props.moreLinkName} <Arrow dir = "right"/> </Link>):''    
                 }
             </div>
         );

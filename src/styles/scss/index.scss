@@ -19,6 +19,8 @@
 @import "ola-pagenation.scss";
 @import "mappin.scss";
 
+@import "_variables.scss";
+
 @import "aboutus.scss";
 @import "career.scss";
 @import "categories.scss";
@@ -45,8 +47,6 @@
 
 @import "main-header.scss";
 @import "news.scss";
-
-@import "bootstrap-custom.scss";
 
 @import "news-page-header.scss";
 @import "news-page.scss";

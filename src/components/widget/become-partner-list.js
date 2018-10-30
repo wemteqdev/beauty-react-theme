@@ -6,10 +6,6 @@ import {isMobile} from 'react-device-detect';
 
 class BecomePartnerList extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    // }
-
     render() {
         let className = "your-time-list-item col-md-4 col-sm-12";
         if (isMobile) {
@@ -22,7 +18,7 @@ class BecomePartnerList extends React.Component {
         return (
             <div>
                 <div className = "list-title">Become a Partner</div>
-                <div className={`row ${scroll_x_container}`}>
+                <div className={`row rp-20 ${scroll_x_container}`}>
                     <YourTimeListItem 
                         title="List Your Business" 
                         asset = {assets.yourTI0} 

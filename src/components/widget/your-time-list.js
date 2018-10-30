@@ -21,7 +21,7 @@ class YourTimeList extends React.Component {
         return (
             <div>
                 <div className = "list-title">Your Time Belongs To You.</div>
-                <div className={`row ${scroll_x_container}`}>
+                <div className={`row rp-10 ${scroll_x_container}`}>
                     <YourTimeListItem 
                         title="Business" 
                         asset = {assets.yourTI0} 

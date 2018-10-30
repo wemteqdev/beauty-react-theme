@@ -56,7 +56,7 @@ class ProductDealsList extends React.Component {
             scroll_x_container = "flex-nowrap scroll-x";
         }
         return (
-            <div className={`cardlist-container row ${scroll_x_container}`}>
+            <div className={`cardlist-container row rp-6 ${scroll_x_container}`}>
                 {carditems}
             </div>
         )

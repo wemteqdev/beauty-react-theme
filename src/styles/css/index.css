@@ -2700,6 +2700,98 @@ div.ardp-date-picker .date-picker-trigger:active {
   color: #fff;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1040px !important;
+  }
+}
+.row {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+.row.rp-6 {
+  margin-right: -6px !important;
+  margin-left: -6px !important;
+}
+.row.rp-6 > [class^=col-], .row.rp-6 [class*=" col-"] {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+.row.rp-20 {
+  margin-right: -20px !important;
+  margin-left: -20px !important;
+}
+.row.rp-20 > [class^=col-], .row.rp-20 [class*=" col-"] {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.row.rp-10 {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+.row.rp-10 > [class^=col-], .row.rp-10 [class*=" col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.row.rp-12 {
+  margin-right: -12px !important;
+  margin-left: -12px !important;
+}
+.row.rp-12 > [class^=col-], .row.rp-12 [class*=" col-"] {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.row.rp-14 {
+  margin-right: -14px !important;
+  margin-left: -14px !important;
+}
+.row.rp-14 > [class^=col-], .row.rp-14 [class*=" col-"] {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+.row.rp-15 {
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+}
+.row.rp-15 > [class^=col-], .row.rp-15 [class*=" col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row.rp-20 {
+  margin-right: -20px !important;
+  margin-left: -20px !important;
+}
+.row.rp-20 > [class^=col-], .row.rp-20 [class*=" col-"] {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.row.rp-22 {
+  margin-right: -22px !important;
+  margin-left: -22px !important;
+}
+.row.rp-22 > [class^=col-], .row.rp-22 [class*=" col-"] {
+  padding-right: 22px;
+  padding-left: 22px;
+}
+.row.rp-35 {
+  margin-right: -35px !important;
+  margin-left: -35px !important;
+}
+.row.rp-35 > [class^=col-], .row.rp-35 [class*=" col-"] {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.row.rp-40 {
+  margin-right: -40px !important;
+  margin-left: -40px !important;
+}
+.row.rp-40 > [class^=col-], .row.rp-40 [class*=" col-"] {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 .aboutus > .title {
   font-size: 34px;
   font-weight: 300;
@@ -4395,11 +4487,6 @@ div.ardp-date-picker .date-picker-trigger:active {
   margin-bottom: 8px;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1040px !important;
-  }
-}
 .news-page-header {
   margin-left: -120px;
   margin-right: -120px;

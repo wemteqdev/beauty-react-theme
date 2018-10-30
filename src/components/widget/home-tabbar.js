@@ -23,7 +23,7 @@ class HomeTabbar extends React.Component {
                 { isMobile &&
                     <SearchBox/>
                 }
-                <div className="row mt-5">
+                <div className="row rp-12 mt-5">
                     <HomeTabbarItem title="Business" asset = {assets.hometab1}/>
                     <HomeTabbarItem title="Professionals" asset = {assets.hometab2}/>
                     <HomeTabbarItem title="Marketplace" asset = {assets.hometab3}/>

@@ -21,8 +21,9 @@ class Navigation extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     English
+                                    <img className="dropdown-img" alt="..." src={assets.dropdown_arrow_medium_black}/>
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="">
                                     <Link className="dropdown-item" to="/">English</Link>
@@ -31,8 +32,9 @@ class Navigation extends React.Component {
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link" href="" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     How It Works
+                                    <img className="dropdown-img" alt="..." src={assets.dropdown_arrow_medium_black}/>
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="">
                                     <Link className="dropdown-item" to="/forbusiness">For Business</Link>
